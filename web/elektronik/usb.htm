@@ -1,0 +1,64 @@
+<!-- 
+Copyright © Iero Demetrio 2013 All Rights Reserved.
+No part of this page or any of its contents may be reproduced, copied, 
+modified or adapted, without the prior written consent of the author.
+ -->
+<html><head><link href="stile.css" rel="stylesheet"/></head><body><h2>Universal Serial Bus</h2>
+<img src="pc_port/usb2.png"><br><font style="font-size:30%;">&nbsp;</font><br><font class=imgdescr>USB 1.x/2.0 Standard A/B plug (male)</font></p>
+<img src="pc_port/usb2_mini.png"><br><font style="font-size:30%;">&nbsp;</font><br><font class=imgdescr>USB 1.x/2.0 Mini A/B plug (male)</font></p>
+<img src="pc_port/usb2_micro.png"><br><font style="font-size:30%;">&nbsp;</font><br><font class=imgdescr>USB 2.0 Micro A/B plug (male)</font></p>
+<table class=padleft><tr><th colspan=2>Pin</th><th rowspan=2>Name</th><th rowspan=2>Description</th><th rowspan=2>Color</th></tr>
+<tr><th>Stand.</th><th>Mini/Micro</th></tr>
+<tr><th>1</th><th>1</th><td>VCC</td><td>+5 V</td><td style="background:Red">Red</td></tr>
+<tr><th>2</th><th>2</th><td>D-</td><td>Data -</td><td style="background:White">White</td></tr>
+<tr><th>3</th><th>3</th><td>D+</td><td>Data +</td><td style="background:Green">Green</td></tr>
+<tr><th>-</th><th>4</th><td>ID</td><td>OTG Identification:<br>&bull; <b>host:</b> connected to ground<br>&bull; <b>slave:</b> not connected</td><td><i>Not connected</i></td></tr>
+<tr><th>4</th><th>5</th><td>GND</td><td>Ground</td><td style="color:white;background:Black">Black</td></tr>
+<tr><th colspan=2>Shell</th><td>Shield</td><td>Metal shell</td><td><i>Drain Wire</i></td></tr>
+</table>
+<br><hr><h2>USB 3.x</h2><img src="pc_port/usb3a.png"><br><font style="font-size:30%;">&nbsp;</font><br><font class=imgdescr>USB 3.x Standard-A Receptable (female) and plug (male)</font></p>
+<img src="pc_port/usb3bp.png"><br><font style="font-size:30%;">&nbsp;</font><br><font class=imgdescr>USB 3.x Powered-B Receptable (female) and plug (male)</font></p>
+<img src="pc_port/usb3_micro.png"><br><font style="font-size:30%;">&nbsp;</font><br><font class=imgdescr>USB 3.x Micro-B plug (male)</font></p>
+<table><tr><th colspan=3>Pin</th><th rowspan=2>Signal</th><th rowspan=2>Description</th><th rowspan=2>Color (type A)</th></tr>
+<tr><th>Type A</th><th>Type B (*)</th><th>Micro B</th></tr>
+<tr><td>1</td><td>1</td><td>1</td><td>VBUS</td><td>Power</td><td style="background:Red">Red</td></tr>
+<tr><td>2</td><td>2</td><td>2</td><td>Data -</td><td rowspan=2>USB 2.0 data</td><td style="background:White">White</td></tr>
+<tr><td>3</td><td>3</td><td>3</td><td>Data +</td><td style="background:Green">Green</td></tr>
+<tr><td>4</td><td>4</td><td>5</td><td>GND</td><td>Ground for power</td><td style="color:white;background:Black">Black</td></tr>
+<tr><td>5</td><td>8</td><td>9</td><td>SSRX-</td><td rowspan=2>SuperSpeed receiver</td><td style="color:white;background:Blue">Blue</td></tr>
+<tr><td>6</td><td>9</td><td>10</td><td>SSRX+</td><td style="background:Yellow">Yellow</td></tr>
+<tr><td>7</td><td>7</td><td>8</td><td>GND DRAIN</td><td>Ground for signal</td><td></td></tr>
+<tr><td>8</td><td>5</td><td>6</td><td>SSTX-</td><td rowspan=2>SuperSpeed transmitter</td><td style="color:white;background:Purple">Purple</td></tr>
+<tr><td>9</td><td>6</td><td>7</td><td>SSTX+</td><td style="background:Orange">Orange</td></tr>
+<tr><td>10</td><td>10</td><td>-</td><td>DPWR (*)<br>PD&nbsp;DETECT&nbsp;1</td><td>Power provided by device<br>/PD detect</td></tr>
+<tr><td>11</td><td>11</td><td>-</td><td>DGND (*)<br>PD&nbsp;DETECT&nbsp;2</td><td>Ground for DPWR<br>/PD detect</td></tr>
+<tr><td>-</td><td>-</td><td>4</td><td>ID</td><td>OTG Identification</td></tr>
+<tr><td colspan="3">Shell</td><td>Shield</td><td>Connector metal shell</td></tr>
+</table><div class=ls>Note: Tx and Rx are defined from host perspective for Type-A, and from device perspective for Type-B and Micro-B.<br><br>
+(*) Powered-B USB connector allows USB accessories to draw power from peripheral devices. It is deprecated in USB 3.1 and replaced by <b>Power Delivery (PD)</b> specs.<br>
+Pins 10-11 are used in PD receptacle to detect a PD plug.<br>
+Standard connectors don't have the pins 10-11.</div>
+<br><hr><h2>USB 3.1 Type-C</h2><img src="pc_port/usb3c.png"><br>
+<b>USB Type-C Receptacle Interface (Front View)</b><table>
+<tr><td>A1</td><td>A2</td><td>A3</td><td>A4</td><td>A5</td><td>A6</td><td>A7</td><td>A8</td><td>A9</td><td>A10</td><td>A11</td><td>A12</td></tr>
+<tr><td>GND</td><td>TX1+</td><td>TX1-</td><td>Vbus</td><td>CC1</td><td>D+</td><td>D-</td><td>SBU1</td><td>Vbus</td><td>RX2-</td><td>RX2+</td><td>GND</td></tr>
+<tr><td colspan=12 bgcolor=gray><font size=1em>&nbsp;</font></td></tr>
+<tr><td>GND</td><td>RX1+</td><td>RX1-</td><td>Vbus</td><td>SBU2</td><td>D-</td><td>D+</td><td>CC2</td><td>Vbus</td><td>TX2-</td><td>TX2+</td><td>GND</td></tr>
+<tr><td>B12</td><td>B11</td><td>B10</td><td>B9</td><td>B8</td><td>B7</td><td>B6</td><td>B5</td><td>B4</td><td>B3</td><td>B2</td><td>B1</td></tr>
+</table><br>
+<b>USB Type-C Plug Interface (Front View)</b><table>
+<tr><td>A12</td><td>A11</td><td>A10</td><td>A9</td><td>A8</td><td>A7</td><td>A6</td><td>A5</td><td>A4</td><td>A3</td><td>A2</td><td>GND</td></tr>
+<tr><td>GND</td><td>RX2+</td><td>RX2-</td><td>Vbus</td><td>SBU1</td><td>D-</td><td>D+</td><td>CC</td><td>Vbus</td><td>TX1-</td><td>TX1+</td><td>GND</td></tr>
+<tr><td colspan=12 bgcolor=gray><font size=1em>&nbsp;</font></td></tr>
+<tr><td>GND</td><td>TX2+</td><td>TX2-</td><td>Vbus</td><td>Vconn</td><td></td><td></td><td>SBU2</td><td>Vbus</td><td>RX1-</td><td>RX1+</td><td>GND</td></tr>
+<tr><td>B1</td><td>B2</td><td>B3</td><td>B4</td><td>B5</td><td>B6</td><td>B7</td><td>B8</td><td>B9</td><td>B10</td><td>B11</td><td>B12</td></tr>
+</table>
+<br><div class=ls><b>The pin-out is independent of plug orientation.</b><br>
+Connector includes both USB 2.0 (D+ and D−) and USB 3.1 (TX and RX pairs) data buses, USB power (VBUS) and ground (GND), Configuration Channel signals (CC1 and CC2), and two Sideband Use (SBU) signal pins.<br>
+Not all signals are required in all platforms or devices.</div>
+<div align=left><br><hr><h2>USB Specifications</h2>
+- <a href="usb_spec.htm#power">USB Power Specification</a><br>
+- <a href="usb_spec.htm#PD">USB Power Delivery Specification</a><br>
+- <a href="usb_spec.htm#speed">USB Speed Specification</a><br>
+</div>
+<br><br></body></html>

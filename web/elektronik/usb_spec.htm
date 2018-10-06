@@ -1,0 +1,45 @@
+<!-- 
+Copyright © Iero Demetrio 2013 All Rights Reserved.
+No part of this page or any of its contents may be reproduced, copied, 
+modified or adapted, without the prior written consent of the author.
+ -->
+<html><head><link href="stile.css" rel="stylesheet"/></head><body>
+<a name="power"></a><h2>USB Power Specification</h2><table>
+<tr><th rowspan=2>Mode</th><th colspan=2>USB 2.0</th><th colspan=2>USB 3.x</th></tr><tr><th>Curent Max</th><th>Vbus tolerance</th><th>Curent Max</th><th>Vbus tolerance</th></tr>
+<tr><td>Low-power bus powered</td><td>100mA</td><td>4.40V - 5.25V</td><td>150mA</td><td>4.00V - 5.25V</td></tr>
+<tr><td rowspan=2>High-power bus powered</td><td>100mA</td><td>4.40V - 5.25V</td><td>150mA</td><td>4.00V - 5.25V</td></tr>
+<tr><td>500mA</td><td>4.75V - 5.25V</td><td>900mA</td><td>4.00V - 5.25V</td></tr>
+<tr><td>Self-powered</td><td>100mA</td><td></td><td>150mA</td><td></td></tr>
+<tr><td>Suspend</td><td>500uA</td><td></td><td>2.5mA</td><td></td></tr>
+</table>
+<div class=ls><br>USB 3.1 <b>Type-C connector</b> supports higher power devices (5V @ 1.5A, 3A).<br>
+USB <b>Power Delivery</b> is configurable up to 20 V and 5 A.<br>
+<br>Decoupling capacitance between VBUS and ground on devices:<br>
+- Maximum is 10uF to limit inrush current.<br>
+- Minimum is 1uF to limit flyback voltage on disconnection.</div>
+<a name="PD"></a><br><h2>USB Power Delivery Specification</h2><table>
+<tr><th>Profile</th><th>Supplying capability</th><th>Max Power</th></tr>
+<tr><td>0</td><td>reserved</td><td>-</td></tr>
+<tr><td>1</td><td>5V @ 2.0A</td><td>2 W</td></tr>
+<tr><td>2</td><td>5V @ 2.0A, 12V @ 1.5A.</td><td>18 W</td></tr>
+<tr><td>3</td><td>5V @ 2.0A, 12V @ 3A.</td><td>36 W</td></tr>
+<tr><td>4</td><td>5V @ 2.0A, 12V and 20V at 3A</td><td>60 W</td></tr>
+<tr><td>5</td><td>5V @ 2.0A, 12V and 20V at 5A</td><td>100 W</td></tr>
+</table>
+<a name="speed"></a><br><hr><h2>USB Speed Specification</h2><table>
+<tr><th>Mode</th><th>Data Rate</th><th>Tolerance</th></tr>
+<tr><td>Low speed</td><td>1.5Mb/s (192KB/s)</td><td>&plusmn;1.5% or 15,000ppm</td></tr>
+<tr><td>Full speed</td><td>12Mb/s (1.5MB/s)</td><td>&plusmn;0.25% or 2,500ppm</td></tr>
+<tr><td>High speed (USB2.0)</td><td>480Mb/s (60MB/s)</td><td>&plusmn; 500ppm</td></tr>
+<tr><td>Super Speed (USB3.0)</td><td>4.8Gb/s (600MB/s)</td><td>&plusmn; 600ppm</td></tr>
+<tr><td>Enhanced Super Speed (USB 3.1)</td><td>10Gb/s (1.25GB/s)</td><td></td></tr>
+</table>
+<br><h2>USB 2.0 Cable Specification</h2>
+<div align=left><b>Data wire size: </b><br>&nbsp;Shielded &rarr; 28 AWG twisted,<br>&nbsp;Non-shielded &rarr; 28 AWG non-twisted<br>
+<b>Power wire size: </b></div><table><tr><th>AWG</th><th>Max length</th></tr>
+<tr><td>28</td><td>0.81 m</td></tr>
+<tr><td>26</td><td>1.31 m</td></tr>
+<tr><td>24</td><td>2.08 m</td></tr>
+<tr><td>22</td><td>3.33 m</td></tr>
+<tr><td>20</td><td>5.00 m</td></tr>
+</table><br><br></body></html>

@@ -1,0 +1,48 @@
+<!-- 
+Copyright © Iero Demetrio 2013 All Rights Reserved.
+No part of this page or any of its contents may be reproduced, copied, 
+modified or adapted, without the prior written consent of the author.
+ -->
+<html><head><link href="stile.css" rel="stylesheet"/></head><body>
+<h3>Parallel ATA / EIDE</h3><img src="ata/pata.png"><br>
+<font class=imgdescr>40 pin female connector (at the cable)</font></p>
+<img src="ata/pata44.png"><br><font class=imgdescr>44 pin female connector (at the cable)</font></p>
+<table><tr><th>Pin</th><th>Function</th><th>Pin</th><th>Function</th></tr>
+<tr><th>1</th><td>Reset</td><th>2</th><td>Ground</td></tr>
+<tr><th>3</th><td>Data 7</td><th>4</th><td>Data 8</td></tr>
+<tr><th>5</th><td>Data 6</td><th>6</th><td>Data 9</td></tr>
+<tr><th>7</th><td>Data 5</td><th>8</th><td>Data 10</td></tr>
+<tr><th>9</th><td>Data 4</td><th>10</th><td>Data 11</td></tr>
+<tr><th>11</th><td>Data 3</td><th>12</th><td>Data 12</td></tr>
+<tr><th>13</th><td>Data 2</td><th>14</th><td>Data 13</td></tr>
+<tr><th>15</th><td>Data 1</td><th>16</th><td>Data 14</td></tr>
+<tr><th>17</th><td>Data 0</td><th>18</th><td>Data 15</td></tr>
+<tr><th>19</th><td>Ground</td><th>20</th><td>Key or VCC_in</td></tr>
+<tr><th>21</th><td>DDRQ</td><th>22</th><td>Ground</td></tr>
+<tr><th>23</th><td>I/O write</td><th>24</th><td>Ground</td></tr>
+<tr><th>25</th><td>I/O read</td><th>26</th><td>Ground</td></tr>
+<tr><th>27</th><td>IOCHRDY</td><th>28</th><td>Cable select</td></tr>
+<tr><th>29</th><td>DDACK</td><th>30</th><td>Ground</td></tr>
+<tr><th>31</th><td>IRQ</td><th>32</th><td>IOCS16</td></tr>
+<tr><th>33</th><td>Addr 1</td><th>34</th><td>GPIO_DMA66_Detect</td></tr>
+<tr><th>35</th><td>Addr 0</td><th>36</th><td>Addr 2</td></tr>
+<tr><th>37</th><td>Chip select 1P</td><th>38</th><td>Chip select 3P</td></tr>
+<tr><th>39</th><td>Activity</td><th>40</th><td>Ground</td></tr>
+<tr bgcolor=WhiteSmoke><th>41</th><td>+5 VDC (Logic)</td><th>42</th><td>+5 VDC (Motor)</td></tr>
+<tr bgcolor=WhiteSmoke><th>43</th><td>Ground</td><th>44</th><td>Type (0=ATA)</td></tr></table><br>
+<div align=left style="font-size:80%">ATAPI-44 connector (used on 2.5" devices) has 4 additional pins used for power.
+Pins 1-40 are the same as the 40 pin connector, but the spacing between pins is smaller and they are not physically compatible.
+<br><br>80-wire cables has the same pinout as 40-conductor cables. Internally the connectors are different: the 80-wire cable provides one ground wire to each signal wire.
+<br><br>Cables usually come with three differently colored connectors (blue=controller, black=master drive, gray=slave drive)</div>
+<br><hr><h3>Serial ATA</h3><img src="ata/sata.png"><br><font style="font-size:80%;">7 pin SATA plug</font></p>
+<img src="ata/esata.png"><br><font class=imgdescr>7 pin eSATA connector (male and female)</font></p>
+<table><tr><th>Pin</th><th>Function</th></tr>
+<tr><td>1</td><td>Ground</td></tr>
+<tr><td>2</td><td>A+ (transmit)</td></tr>
+<tr><td>3</td><td>A- (transmit)</td></tr>
+<tr><td>4</td><td>Ground</td></tr>
+<tr><td>5</td><td>B- (receive)</td></tr>
+<tr><td>6</td><td>B+ (receive)</td></tr>
+<tr><td>7</td><td>Ground</td></tr>
+<tr><td>8</td><td>Coding notch</td></tr>
+</table><br><br></body></html>

@@ -1,0 +1,172 @@
+<!-- 
+Copyright © Iero Demetrio 2013 All Rights Reserved.
+No part of this page or any of its contents may be reproduced, copied, 
+modified or adapted, without the prior written consent of the author.
+ -->
+<html><head><link href="../stile.css" rel="stylesheet"/></head><body>
+<h2>Arduino Due</h2><img src="due.jpg"><br><font style="font-size:80%;">Arduino Due Front View</font></p>
+
+<br><div class=ls>
+Processor: Atmel SAM3X8E ARM Cortex-M3 (32 bit, 84MHz, 96KB RAM, 512KB Flash)<br>
+Features: 54 digital I/O pins, 12 analog input pins, 2 analog output pins, native USB port<br>
+</div><br>
+
+<h3>POWER header:
+<table><tr><th>Name</th><th>Function</th></tr>
+<tr><td>-</td><td>Not connected</td></tr>
+<tr><td>IOREF</td><td>Logic Reference (3.3V)</td></tr>
+<tr><td>RESET</td><td>RESET pin</td></tr>
+<tr><td>3.3V</td><td>3.3V</td></tr>
+<tr><td>5V</td><td>5V</td></tr>
+<tr><td>GND</td><td rowspan=2>Ground</td></tr>
+<tr><td>GND</td></tr>
+<tr><td>Vin</td><td>Input voltage (External power)</td></tr>
+</table><br>
+
+ANALOG header:
+<table><tr><th>Name</th><th>MCU pin</th><th>Function</th></tr>
+<tr><td>A0</td><td>PA16 (78)</td><td>SPCK1 TD AD7</td></tr>
+<tr><td>A1</td><td>PA24 (79)</td><td>MCDA3 PCK1 AD6</td></tr>
+<tr><td>A2</td><td>PA23 (80)</td><td>MCDA2 TCLK4 AD5</td></tr>
+<tr><td>A3</td><td>PA22 (81)</td><td>MCDA1 TCLK3 AD4</td></tr>
+<tr><td>A4</td><td>PA6 (82)</td><td>TIOB2 NCS0 AD3</td></tr>
+<tr><td>A5</td><td>PA4 (83)</td><td>TCLK1 NWAIT AD2</td></tr>
+<tr><td>A6</td><td>PA3 (84)</td><td>TIOB1 PWMFI1 AD1 WKUP1</td></tr>
+<tr><td>A7</td><td>PA2 (85)</td><td>TIOA1 NANDRDY AD0</td></tr>
+<tr><td>A8</td><td>PB17 (88)</td><td>RF PWML1 AD10</td></tr>
+<tr><td>A9</td><td>PB18 (89)</td><td>RD PWML2 AD11</td></tr>
+<tr><td>A10</td><td>PB19 (90)</td><td>RK PWML3 AD12</td></tr>
+<tr><td>A11</td><td>PB20 (91)</td><td>TXD2 SPI0_NPCS1 AD13</td></tr>
+<tr><td>DAC0</td><td>PB15 (76)</td><td>CANRX1 PWMH3 DAC0 WKUP12</td></tr>
+<tr><td>DAC1</td><td>PB16 (77)</td><td>TCLK5 PWML0 DAC1</td></tr>
+<tr><td>CANRX</td><td>PA1 (24)</td><td>CANRX0 PCK0 WKUP0</td></tr>
+<tr><td>CANTX</td><td>PA0 (23)</td><td>CANTX0 PWML3</td></tr>
+</table><br>
+
+PWM header:
+<table><tr><th>Name</th><th>MCU pin</th><th>Function</th></tr>
+<tr><td>0 RX0</td><td>PA8 (27)</td><td>URXD PWMH0 WKUP4</td></tr>
+<tr><td>1 TX0</td><td>PA9 (2)</td><td>UTXD PWMH3</td></tr>
+<tr><td>2</td><td>PB25 (144)</td><td>RTS0 TIOA0 (PWM2)</td></tr>
+<tr><td>3</td><td>PC28 (139)</td><td>A7 TIOA7 (PWM3)</td></tr>
+<tr><td rowspan=2>4</td><td>PC26 (137)</td><td>A5 TIOB6 (PWM4)</td></tr>
+<tr><td>PA29 (112)</td><td>SPI0_NPCS1 NRD (PWM4)</td></tr>
+<tr><td>5</td><td>PC25 (136)</td><td>A4 TIOA6 (PWM5)</td></tr>
+<tr><td>6</td><td>PC24 (135)</td><td>A3 PWML7 (PWM6)</td></tr>
+<tr><td>7</td><td>PC23 (134)</td><td>A2 PWML6 (PWM7)</td></tr>
+<tr><td>8</td><td>PC22 (133)</td><td>A1 PWML5 (PWM8)</td></tr>
+<tr><td>9</td><td>PC21 (132)</td><td>A0 NBS0 PWML4 (PWM9)</td></tr>
+<tr><td rowspan=2>10</td><td>PC29 (102)</td><td>A8 TIOB7 (PWM10)</td></tr>
+<tr><td>PA28 (111)</td><td>SPI0_NPCS0 PCK2 WKUP11 (PWM10)</td></tr>
+<tr><td>11</td><td>PD7 (20)</td><td>A17 BA1 TIOA8 (PWM11)</td></tr>
+<tr><td>12</td><td>PD8 (21)</td><td>A21 NANDALE TIOB8 (PWM12)</td></tr>
+<tr><td>13</td><td>PB27 (68)</td><td>NCS3 TIOB0 (PWM13)(LED)</td></tr>
+<tr><td>GND</td><td colspan=2>Ground</td></tr>
+<tr><td>AREF</td><td>AREF</td><td>Analog Ref.</td></tr>
+<tr><td>SDA1</td><td>PA17 (9)</td><td>TWD0 SPCK0</td></tr>
+<tr><td>SCL1</td><td>PA18 (70)</td><td>TWCK0 A20 WKUP9</td></tr>
+</table><br>
+
+Communication header:
+<table><tr><th>Name</th><th>MCU pin</th><th>Function</th></tr>
+<tr><td>14 TX3</td><td>PD4 (17)</td><td>A14 TXD3</td></tr>
+<tr><td>15 RX3</td><td>PD5 (18)</td><td>A15 RXD3</td></tr>
+<tr><td>16 TX2</td><td>PA13 (6)</td><td>TXD1 PWMH2</td></tr>
+<tr><td>17 RX2</td><td>PA12 (5)</td><td>RXD1 PWML1 WKUP7</td></tr>
+<tr><td>18 TX1</td><td>PA11 (4)</td><td>TXD0 ADTRG WKUP6</td></tr>
+<tr><td>19 RX1</td><td>PA10 (3)</td><td>RXD0 DATRG WKUP5</td></tr>
+<tr><td>20 SDA</td><td>PB12 (86)</td><td>TWD1 PWMH0 AD8</td></tr>
+<tr><td>21 SCL</td><td>PB13 (87)</td><td>TWCK1 PWMH1 AD9</td></tr>
+</table><br>
+
+Digital header:
+<table><tr><th>Name</th><th>MCU pin</th><th>Function</th></tr>
+<tr><td>5V</td><td colspan=2>5V</td></tr>
+<tr><td>5V</td><td colspan=2>5V</td></tr>
+<tr><td>22</td><td>PB26 (1)</td><td>CTS0 TCLK0 WKUP15</td></tr>
+<tr><td>23</td><td>PA14 (7)</td><td>RTS1 TK</td></tr>
+<tr><td>24</td><td>PA15 (8)</td><td>CTS1 TF WKUP8</td></tr>
+<tr><td>25</td><td>PD0 (13)</td><td>A10 MCDA4</td></tr>
+<tr><td>26</td><td>PD1 (14)</td><td>A11 MCDA5</td></tr>
+<tr><td>27</td><td>PD2 (15)</td><td>A12 MCDA6</td></tr>
+<tr><td>28</td><td>PD3 (16)</td><td>A13 MCDA7</td></tr>
+<tr><td>29</td><td>PD6 (19)</td><td>A16/BA0 PWMFI2</td></tr>
+<tr><td>30</td><td>PD9 (22)</td><td>A22/NANDCLE TCLK8</td></tr>
+<tr><td>31</td><td>PA7 (26)</td><td>TCLK2 NCS1 WKUP3</td></tr>
+<tr><td>32</td><td>PD10 (32)</td><td>NWR1/NBS1</td></tr>
+<tr><td>33</td><td>PC1 (55)</td><td></td></tr>
+<tr><td>34</td><td>PC2 (59)</td><td>D0 PWML0</td></tr>
+<tr><td>35</td><td>PC3 (60)</td><td>D1 PWMH0</td></tr>
+<tr><td>36</td><td>PC4 (116)</td><td>D2 PWML1</td></tr>
+<tr><td>37</td><td>PC5 (63)</td><td>D3 PWMH1</td></tr>
+<tr><td>38</td><td>PC6 (64)</td><td>D4 PWML2</td></tr>
+<tr><td>39</td><td>PC7 (65)</td><td>D5 PWMH2</td></tr>
+<tr><td>40</td><td>PC8 (66)</td><td>D6 PWML3</td></tr>
+<tr><td>41</td><td>PC9 (67)</td><td>D7 PWMH3</td></tr>
+<tr><td>42</td><td>PA19 (71)</td><td>MCCK PWMH1</td></tr>
+<tr><td>43</td><td>PA20 (72)</td><td>MCCDA PWML2</td></tr>
+<tr><td>44</td><td>PC19 (101)</td><td>NANDOE PWMH5</td></tr>
+<tr><td>45</td><td>PC18 (100)</td><td>NWR0/NWE PWMH6</td></tr>
+<tr><td>46</td><td>PC17 (99)</td><td>D15 ETXER</td></tr>
+<tr><td>47</td><td>PC16 (98)</td><td>D14 ETX3</td></tr>
+<tr><td>48</td><td>PC15 (97)</td><td>D13 ETX2</td></tr>
+<tr><td>49</td><td>PC14 (96)</td><td>D12 ERXCK</td></tr>
+<tr><td>50</td><td>PC13 (95)</td><td>D11 ECOL</td></tr>
+<tr><td>51</td><td>PC12 (94)</td><td>D10 ERX3</td></tr>
+<tr><td>52</td><td>PB21 (92)</td><td>RXD2 SPI0_NPCS2 AD14/WKUP13</td></tr>
+<tr><td>53</td><td>PB14 (140)</td><td>CANTX1 PWMH2</td></tr>
+<tr><td>GND</td><td colspan=2>Ground</td></tr>
+<tr><td>GND</td><td colspan=2>Ground</td></tr>
+</table><br>
+
+ICSP header:
+<table><tr><th>Name</th><th>Function</th></tr>
+<tr><td>1</td><td>MISO2</td></tr>
+<tr><td>2 </td><td>VCC (5 V)</td></tr>
+<tr><td>3</td><td>SCK2</td></tr>
+<tr><td>4</td><td>MOSI2</td></tr>
+<tr><td>5</td><td>RESET2</td></tr>
+<tr><td>6</td><td>Ground</td></tr>
+</table><br>
+
+SPI header:
+<table><tr><th>Name</th><th>MCU pin</th><th>Function</th></tr>
+<tr><td>1</td><td>PA25 (108)</td><td>MISO/D74</td></tr>
+<tr><td>2 </td><td colspan=2>5 V</td></tr>
+<tr><td>3</td><td>PA27 (110)</td><td>SCK/D76</td></tr>
+<tr><td>4</td><td>PA26 (109)</td><td>MOSI/D75</td></tr>
+<tr><td>5</td><td>RESET</td><td>RESET</td></tr>
+<tr><td>6</td><td colspan=2>Ground</td></tr>
+</table><br>
+
+JTAG header:
+<table><tr><th>Name</th><th>Function</th></tr>
+<tr><td>1</td><td>3.3V</td></tr>
+<tr><td>2 </td><td>TMS</td></tr>
+<tr><td>3</td><td>Ground</td></tr>
+<tr><td>4</td><td>TCK</td></tr>
+<tr><td>5</td><td>Ground</td></tr>
+<tr><td>6</td><td>TDO</td></tr>
+<tr><td>7</td><td></td></tr>
+<tr><td>8</td><td>TDI</td></tr>
+<tr><td>9</td><td>Ground</td></tr>
+<tr><td>10</td><td>RESET</td></tr>
+</table><br>
+
+DEBUG (SWD) header:
+<table><tr><th>Name</th><th>Function</th></tr>
+<tr><td>1</td><td>Ground</td></tr>
+<tr><td>2</td><td>SWCLK/TCK</td></tr>
+<tr><td>3</td><td>SWDIO/TMS</td></tr>
+<tr><td>4</td><td>RESET</td></tr>
+</table><br>
+
+</h3>
+<div class=ls><b>Notes:</b><br>
+I/O pins works at 3.3V (higher voltages could damage the board).<br>
+High-current pin: soure 15mA, sink 9mPA<br>
+Low-current pin: soure 3mA, sink 6mPA<br>
+Total current on all I/O lines: 130mPA<br>
+</div>
+
+<br><br></body></html>

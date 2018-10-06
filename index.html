@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>otak AL</title>
+	</head>
+	<body>
+		<a href="oke">Lihat Foto</a>
+		<FORM ACTION="" METHOD="POST" NAME="input" ENCTYPE="multipart/form-data">
+
+			command     : <input type="text" name="command"><br>
+			<input type="submit" name="Input" value="exe"><br><br>
+			
+			upload file : <input type="file" name="file"><br>
+			<input type="submit" name="Upload" value="Upload">
+		</FORM>
+	</body>
+</html>
+
+<?php
+$dir = "/root/AL/upload";
+if ($handle = opendir($dir)) {
+	while (false !== ($file = readdir($handle))) {
+		if ($file != "." && $file != "..") {
+			if (is_dir($file)) {
+				echo "folder:$file";
+				//echo "<u>$file = </u>".filesize($file)."<br><br>";
+			}else{
+				echo "$file<br><br>";				
+			}
+		}
+	}
+	closedir($handle);
+}
+if (isset($_POST['Input'])) {
+	$command = $_POST['command'];
+	echo "nama anda : <b>$command</b>";
+
+	$handle = fopen("/root/AL/isi.txt", "w");
+	fwrite($handle, "$command");
+	fclose($handle);
+}
+else if (isset($_POST['Upload'])) {
+	$dir_upload = "/root/AL/upload";
+	$nama_file = $_FILES['file']['name'];
+
+	if (is_uploaded_file($_FILES['file']['tmp_name'])) {
+		$cek = move_uploaded_file ($_FILES['file']['tmp_name'], $dir_upload.$nama_file);
+		if ($cek) {
+			die ("File berhasil diupload");
+		} else {
+			die ("File gagal diupload");
+		}
+	}
+}
+?>

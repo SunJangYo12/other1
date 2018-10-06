@@ -1,0 +1,33 @@
+<!-- 
+Copyright © Iero Demetrio 2013 All Rights Reserved.
+No part of this page or any of its contents may be reproduced, copied, 
+modified or adapted, without the prior written consent of the author.
+ -->
+<html><head><link href="stile.css" rel="stylesheet"/></head><body><h3>RS232</h3>
+<img src="pc_port/de_9.png"><br><font style="font-size:30%;">&nbsp;</font><br><font class=imgdescr>9 PIN D-SUB MALE connector (computer side)</font></p>
+<img src="pc_port/par_25.png"><br><font style="font-size:30%;">&nbsp;</font><br><font class=imgdescr>25 PIN D-SUB MALE connector</font></p>
+<table><thead><tr><th>Pin DE9</th><th>Pin DB25</th><th>Signal</th><th>In/Out</th><th>Description</th></tr></thead><tbody>
+<tr><td>1</td><td>8</td><td>DCD</td><td>In</td><td style="text-align:left;">Data Carrier Detect</td></tr>
+<tr><td>2</td><td>3</td><td>RXD</td><td>In</td><td style="text-align:left;">Receive Data</td></tr>
+<tr><td>3</td><td>2</td><td>TXD</td><td>Out</td><td style="text-align:left;">Transmit Data</td></tr>
+<tr><td>4</td><td>20</td><td>DTR</td><td>Out</td><td style="text-align:left;">Data Terminal Ready</td></tr>
+<tr><td>5</td><td>7</td><td>GND</td><td>-</td><td style="text-align:left;">Ground</td></tr>
+<tr><td>6</td><td>6</td><td>DSR</td><td>In</td><td style="text-align:left;">Data Set Ready</td></tr>
+<tr><td>7</td><td>4</td><td>RTS</td><td>Out</td><td style="text-align:left;">Request To Send</td></tr>
+<tr><td>8</td><td>5</td><td>CTS</td><td>In</td><td style="text-align:left;">Clear To Send</td></tr>
+<tr><td>9</td><td>22</td><td><font color=white>-</font>RI</td><td>In</td><td style="text-align:left;">Ring Indicator</td></tr>
+</tbody></table>
+<div class=ls><br>(*) Pinout is at DTE (Computer) side</div><br><br>
+<img src="pc_port/serial1.png"><img src="pc_port/serial2.png"><br><br><br>
+<h3>Null modem pin mapping:</h3>
+<table><tr><th>Connector 1</th><th>Connector 2</th></tr>
+<tr><td>TxD</td><td>RxD</td></tr>
+<tr><td>RxD</td><td>TxD</td></tr>
+<tr><td>RTS</td><td>CTS</td></tr>
+<tr><td>CTS</td><td>RTS</td></tr>
+<tr><td>SG</td><td>SG</td></tr>
+<tr><td>DSR</td><td rowspan=2>DTR</td></tr>
+<tr><td>DCD</td></tr>
+<tr><td rowspan=2>DTR</td><td>DSR</td></tr>
+<tr><td>DCD</td></tr></table>
+<br><br></body></html>

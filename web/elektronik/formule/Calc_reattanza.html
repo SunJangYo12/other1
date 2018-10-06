@@ -1,0 +1,33 @@
+<html><head><link rel="stylesheet" href="include/stile.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=UnifrakturMaguntia">
+<link rel="stylesheet" href="include/jqmath.css">
+<script src="include/jquery.js"></script><script src="include/jqmath.js"></script>
+<script src="include/i18next.js"></script></head>
+<body class=left><h2 id=title></h2>
+<span id=Creatt></span><br>$$X_C=1/{2&pi;fC}$$<br>
+<span id=Lreatt></span><br>$$X_L=2&pi;fL$$<br>
+<span id=frison></span><br>$$f_0=1/{2&pi;&radic;{LC}}$$<br><br>
+<div class=ls id=legend></div><table class=tls>
+<tr><td>X<sub>C</sub></td><td><span id=Creattl></span> [<span class=unit data-i18n="[html]unit.ohm"></span>]</td></tr>
+<tr><td>C</td><td><span id=cap></span> [<span class=unit data-i18n="unit.farad"></span>]</td></tr>
+<tr><td>X<sub>L</sub></td><td><span id=Lreattl></span> [<span class=unit data-i18n="[html]unit.ohm"></span>]</td></tr>
+<tr><td>L</td><td><span id=ind></span> [<span class=unit data-i18n="unit.henry"></span>]</td></tr>
+<tr><td>f</td><td><span id=freq></span> [<span class=unit data-i18n="unit.hertz"></span>]</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+</table>
+<script type="text/javascript">
+i18n.init({ fallbackLng:'en', resGetPath:'locales/__ns__-__lng__.json', useLocalStorage:false }, function() {
+	$("#title").text( i18n.t("react.title") );
+	$("#Creatt").text( i18n.t("react.Creatt") );
+	$("#Lreatt").text( i18n.t("react.Lreatt") );
+	$("#frison").text( i18n.t("react.frison") );
+	$("#legend").text( i18n.t("legend") );
+	$("#Creattl").text( i18n.t("react.Creatt") );
+	$("#cap").text( i18n.t("capacitance") );
+	$("#Lreattl").text( i18n.t("react.Lreatt") );
+	$("#ind").text( i18n.t("inductance") );
+	$("#freq").text( i18n.t("freq") );
+	$(".unit").i18n();
+});
+</script>
+</body></html>

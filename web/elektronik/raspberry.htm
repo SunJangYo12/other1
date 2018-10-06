@@ -1,0 +1,65 @@
+<!-- 
+Copyright © Iero Demetrio 2013 All Rights Reserved.
+No part of this page or any of its contents may be reproduced, copied, 
+modified or adapted, without the prior written consent of the author.
+ -->
+<html><head><link href="stile.css" rel="stylesheet"/></head><body>
+<img src="circuit_boards/raspberryGPIOs.png"><br><font style="font-size:80%;">Raspberry Pi A/B P1 header (GPIO)</font></p>
+<img src="circuit_boards/raspberryGPIOs_plus.png"><br><font style="font-size:80%;">Raspberry Pi A+/B+ and Raspberry Pi0/Pi2/Pi3 header (GPIO)</font></p>
+<table><tr><th colspan=2 width="50%">Row1 Signal</th><th rowspan=2>Pin</th><th rowspan=32></th><th rowspan=2>Pin</th><th colspan=2 width="50%">Row2 Signal</th></tr>
+<tr><th>Pi Rev1</th><th>Pi Rev2<br>Pi+, Pi0, Pi2, Pi3</th><th>Pi Rev1</th><th>Pi Rev2<br>Pi+, Pi0, Pi2, Pi3</th></tr>
+<tr><td style="background:orange" colspan=2>3.3 V</td><th>1</th><th>2</th><td style="background:red" colspan=2>5 V</td></tr>
+<tr><td style="background:lime">GPIO 0</td><td style="background:lime">GPIO 2</td><th rowspan=2>3</th><th rowspan=2>4</th><td style="background:red" colspan=2 rowspan=2>5 V</td></tr>
+<tr><td style="background:cyan">I2C0 SDA</td><td style="background:cyan">I2C1&nbsp;SDA</td></tr>
+<tr><td style="background:lime">GPIO 1</td><td style="background:lime">GPIO 3</td><th rowspan=2>5</th><th rowspan=2>6</th><td style="background:black;color:white" colspan=2 rowspan=2>Ground</td></tr>
+<tr><td style="background:cyan">I2C0 SCL</td><td style="background:cyan">I2C1&nbsp;SCL</td></tr>
+<tr><td style="background:lime" colspan=2 rowspan=2>GPIO 4</td><th rowspan=2>7</th><th rowspan=2>8</th><td style="background:lime" colspan=2>GPIO 14</td></tr>
+<tr><td style="background:yellow" colspan=2>UART0 TXD</td></tr>
+<tr><td style="background:black;color:white" colspan=2 rowspan=2>Ground</td><th rowspan=2>9</th><th rowspan=2>10</th><td style="background:lime" colspan=2>GPIO 15</td></tr>
+<tr><td style="background:yellow" colspan=2>UART0 RXD</td></tr>
+<tr><td style="background:lime" colspan=2>GPIO 17</td><th>11</th><th>12</th><td style="background:lime" colspan=2>GPIO 18</td></tr>
+<tr><td style="background:lime">GPIO 21</td><td style="background:lime">GPIO 27</td><th>13</th><th>14</th><td style="background:black;color:white" colspan=2>Ground</td></tr>
+<tr><td style="background:lime" colspan=2>GPIO 22</td><th>15</th><th>16</th><td style="background:lime" colspan=2>GPIO 23</td></tr>
+<tr><td style="background:orange" colspan=2>3.3 V</td><th>17</th><th>18</th><td style="background:lime" colspan=2>GPIO 24</td></tr>
+<tr><td style="background:lime" colspan=2>GPIO 10</td><th rowspan=2>19</th><th rowspan=2>20</th><td style="background:black;color:white" colspan=2 rowspan=2>Ground</td></tr>
+<tr><td style="background:violet" colspan=2>SPI0 MOSI</td></tr>
+<tr><td style="background:lime" colspan=2>GPIO 9</td><th rowspan=2>21</th><th rowspan=2>22</th><td style="background:lime" colspan=2 rowspan=2>GPIO 25</td></tr>
+<tr><td style="background:violet" colspan=2>SPI0 MISO</td></tr>
+<tr><td style="background:lime" colspan=2>GPIO 11</td><th rowspan=2>23</th><th rowspan=2>24</th><td style="background:lime" colspan=2>GPIO 8</td></tr>
+<tr><td style="background:violet" colspan=2>SPI0 SCLK</td><td style="background:violet" colspan=2>SPI0 CE0_N</td></tr>
+<tr><td style="background:black;color:white" colspan=2 rowspan=2>Ground</td><th rowspan=2>25</th><th rowspan=2>26</th><td style="background:lime" colspan=2>GPIO 7</td></tr>
+<tr><td style="background:violet" colspan=2>SPI0 CE1_N</td></tr>
+<tr><td colspan=2></td><th></th><th></th><td colspan=2></td></tr>
+<tr><td rowspan=7></td><td style="background:green;color:white">IS_SD</td><th>27</th><th>28</th><td rowspan=7></td><td style="background:green;color:white">IS_SC</td></tr>
+<tr><td style="background:lime">GPIO&nbsp;5</td><th>29</th><th>30</th><td style="background:black;color:white">Ground</td></tr>
+<tr><td style="background:lime">GPIO&nbsp;6</td><th>31</th><th>32</th><td style="background:lime"2>GPIO&nbsp;12</td></tr>
+<tr><td style="background:lime">GPIO&nbsp;13</td><th>33</th><th>34</th><td style="background:black;color:white">Ground</td></tr>
+<tr><td style="background:lime">GPIO&nbsp;19</td><th>35</th><th>36</th><td style="background:lime">GPIO&nbsp;16</td></tr>
+<tr><td style="background:lime"2>GPIO&nbsp;26</td><th>37</th><th>38</th><td style="background:lime">GPIO&nbsp;20</td></tr>
+<tr><td style="background:black;color:white">Ground</td><th>39</th><th>40</th><td style="background:lime">GPIO&nbsp;21</td></tr>
+</table>
+<br><div class=ls><b>Notes:</b><br>
+Voltage levels are 3.3V (NOT 5V tolerant). There is no over-voltage protection on the board.<br>
+The maximum permitted current draw from the 3.3 V pin is 50 mA.<br>
+The GPIO pins are unbuffered and unprotected.<br>
+Pin 3-5 (SDA/SCL) have 1.8 k&Omega; pulls up resistors on the board.<br><br>
+<b>Raspberry Pi A+/B+, Raspberry Pi0, Pi2 and Pi3</b><br>
+Pin 27-40 are only available on Raspberry Pi A+/B+, Raspberry Pi0, Pi2 and Pi3.<br>
+Pin IS_SD-IS_SC are reserved for ID EEPROM.
+</div><br><br>
+<div align=left><br><hr><h3>Raspberry Pi Technical Specifications</h3>
+<table><tr><th></th><th>Pi A</th><th>Pi A+</th><th>Pi B</th><th>Pi B+</th><th>Pi2 B</th><th>Pi3 B</th><th>Pi 0</th></tr>
+<tr><td>SoC</td><td colspan=4>Broadcom BCM2835</td><td>Broadcom BCM2836</td><td>Broadcom BCM2837</td><td>Broadcom BCM2835</td></tr>
+<tr><td>CPU</td><td colspan=4>700MHz ARM1176JZF-S</td><td>900MHz 4x ARM Cortex-A7</td><td>1.2GHz 4x ARM Cortex-A53</td><td>1GHz ARM1176JZF-S</td></tr>
+<tr><td>GPU</td><td colspan=7>Broadcom VideoCore IV, OpenGL ES 2.0, 1080p30 H.264 high-profile decoder and encoder (BCM2837: 1080p60)</td></tr>
+<tr><td>RAM</td><td colspan=2>256 MB</td><td colspan=2>256/512 MB</td><td colspan=2>1 GB</td><td>512 MB</td></tr>
+<tr><td>USB</td><td colspan=2>1</td><td>2</td><td colspan=3>4</td><td>1 (micro)</td></tr>
+<tr><td rowspan=2>Video output</td><td  colspan=6>HDMI (rev 1.4)</td><td>Mini-HDMI</td></tr>
+<tr><td>composite (RCA jack)</td><td>composite (3.5mm jack)</td><td>composite (RCA jack)</td><td colspan=3>composite (3.5mm jack)</td><td>composite via GPIO</td></tr>
+<tr><td>Audio output</td><td colspan=6>HDMI, 3.5mm jack</td><td>Mini-HDMI, PWM on GPIO</td></tr>
+<tr><td>Storage</td><td>SD/MMC/SDIO</td><td>microSD</td><td>SD/MMC/SDIO</td><td colspan=4>microSD</td></tr>
+<tr><td>Network</td><td colspan=2>-</td><td colspan=3>10/100 Ethernet (RJ-45)</td><td>10/100 Ethernet (RJ-45),<br>802.11n WiFi,<br>Bluetooth 4.1</td><td>-</td></tr>
+<tr><td>Peripherals</td><td>26 pin GPIO header</td><td>40 pin GPIO header</td><td>26 pin GPIO header</td><td colspan=4>40 pin GPIO header</td></tr>
+<tr><td>Power ratings</td><td>300mA (1.5W)</td><td>200mA (1W)</td><td>700mA (3.5W)</td><td>600mA (3W)</td><td colspan=2>800mA (4W)</td><td>160mA (0.8W)</td></tr>
+<tr><td>Size (mm)</td><td>85.6 x 56.5</td><td>65 x 56.5</td><td colspan=4>85.60 x 56.5</td><td>65 x 30 </td></tr>
+</table></div><br><br></body></html>

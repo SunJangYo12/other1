@@ -1,0 +1,31 @@
+<html><head><link rel="stylesheet" href="include/stile.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=UnifrakturMaguntia">
+<link rel="stylesheet" href="include/jqmath.css">
+<script src="include/jquery.js"></script><script src="include/jqmath.js"></script>
+<script src="include/i18next.js"></script></head>
+<body class=left><h2 id=title></h2>
+<span id=rc></span><br>$$f=1/{2&pi;RC}$$<br>
+<span id=lc></span><br>$$f=1/{2&pi;&radic;{LC}}$$<br>
+<span id=rl></span><br>$$f=R/{2&pi;L}$$<br><br>
+<div class=ls id=legend></div><table class=tls>
+<tr><td>R</td><td><span id=res></span> [<span class=unit data-i18n="[html]unit.ohm"></span>]</td></tr>
+<tr><td>C</td><td><span id=cap></span> [<span class=unit data-i18n="unit.farad"></span>]</td></tr>
+<tr><td>L</td><td><span id=ind></span> [<span class=unit data-i18n="unit.henry"></span>]</td></tr>
+<tr><td>f</td><td><span id=cof></span> [<span class=unit data-i18n="unit.hertz"></span>]</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+</table>
+<script type="text/javascript">
+i18n.init({ fallbackLng:'en', resGetPath:'locales/__ns__-__lng__.json', useLocalStorage:false }, function() {
+	$("#title").text( i18n.t("filt.title") );
+	$("#rc").text( i18n.t("filt.rc") );
+	$("#lc").text( i18n.t("filt.lc") );
+	$("#rl").text( i18n.t("filt.rl") );
+	$("#legend").text( i18n.t("legend") );
+	$("#res").text( i18n.t("resistance") );
+	$("#cap").text( i18n.t("capacitance") );
+	$("#ind").text( i18n.t("inductance") );
+	$("#cof").text( i18n.t("cutoff_freq") );
+	$(".unit").i18n();
+});
+</script>
+</body></html>

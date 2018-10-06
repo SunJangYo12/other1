@@ -1,0 +1,110 @@
+{
+  "legend": "LEGENDA:",
+  "resistance": "Resistenza",
+  "conductance": "Conduttanza",
+  "voltage": "Tensione",
+  "voltage_in": "Tensione in ingresso",
+  "voltage_out": "Tensione in uscita",
+  "voltage_ref": "Tensione di riferimento",
+  "current": "Corrente",
+  "current_out": "Corrente in uscita",
+  "voltage_supply": "Tensione di alimentazione",
+  "capacitance": "Capacità",
+  "inductance": "Induttanza",
+  "cutoff_freq": "Frequenza di taglio",
+  "power": "Potenza",
+  "resistivity": "Resistività",
+  "conductivity": "Conduttività",
+  "length": "Lunghezza",
+  "area": "Area sezione trasversale",
+  "freq": "Frequenza",
+  "permeab": "Permeabilità magnetica",
+  "at": "A",
+
+  "unit": {
+  	"amp": "Ampere (A)",
+  	"volt": "Volt (V)",
+  	"ohm": "Ohm (&ohm;)",
+  	"hertz": "Hertz (Hz)",
+  	"henry": "Henry (H)",
+  	"farad": "Farad (F)",
+  	"watt": "Watt (W)",
+  	"siemens": "Siemens (S)",
+  	"ohm_m": "Ohm-metro (&ohm;&sdot;m)",
+  	"siemens_m": "Siemens per metro (S&sdot;m<sup>-1</sup>)",
+  	"meter": "metri (m)",
+  	"meter2": "metri quadri (m<sup>2</sup>)",
+  	"henry_m": "Henry per metro (H&sdot;m<sup>-1</sup>)"
+  },
+  
+  "op_ampl": {
+  	"title": "Amplificatore Operazionale",
+  	"no_inv_ampl": "Amplificatore non invertente:",
+  	"inv_ampl": "Amplificatore invertente:",
+  	"dif_ampl": "Amplificatore differenziale:"
+  },
+  "filt": {
+  	"title": "Filtri",
+  	"rc": "Semplice Filtro R-C:",
+  	"lc": "Semplice Filtro L-C:",
+  	"rl": "Semplice Filtro R-L:"
+  },
+  "led": {
+  	"title": "Resistenza per LED",
+  	"title2": "Identificazione LED",
+  	"Vf": "Caduta tensione diretta del LED",
+  	"If": "Corrente diretta del LED",
+  	"num": "Numero di LED in serie",
+  	"pos": "Terminale positivo",
+  	"neg": "Terminale negativo",
+  	"anode": "Anodo (A)",
+  	"catode": "Catodo (K)",
+  	"llead": "Terminale lungo",
+  	"slead": "Terminale corto",
+  	"exround": "Esterno arrotondato",
+  	"exflat": "Esterno piatto"
+  },
+  "lm317": {
+  	"title": "Regolatore di tensione lineare",
+  	"volt": "Regolatore di Tensione:",
+  	"curr": "Regolatore di Corrente:",
+  	"current_adj": "Corrente attraverso terminale Adj"
+  },
+  "ohm": {
+  	"title": "Legge di Ohm"
+  },
+  "part": {
+  	"title": "Partitore di Tensione"
+  },
+  "react": {
+  	"title": "Reattanza",
+  	"Creatt": "Reattanza Capacitiva",
+  	"Lreatt": "Reattanza Induttiva",
+  	"frison": "Frequenza di Risonanza"
+  },
+  "se_pa": {
+  	"title": "Resistenze in serie/parallelo",
+  	"ser": "Resistenze in serie:",
+  	"par": "Resistenze in parallelo:"
+  },
+  "Ccharge": {
+  	"title": "Carica condensatore",
+  	"Ccharge": "Carica sul condensatore:",
+  	"Ccurrent": "Corrente di carica:",
+  	"c_voltage": "Tensione sul condensatore"
+  },
+  "ind_design": {
+  	"title": "Formule induttanza",
+  	"cyl_air": "Solenoide cilindrico in aria",
+  	"cyl_air_short": "Solenoide corto cilindrico in aria",
+  	"approximation": "Aprrossimazione solenoide lungo",
+  	"n": "Numero di spire",
+  	"d": "Diametro della bobina",
+  	"l": "Lunghezza della bobina"
+  },
+  "y_delta": {
+  	"title": "Trasformazione stella-triangolo",
+  	"delta_y": "Trasformazione da triangolo a stella:",
+  	"y_delta": "Trasformazione da stella a triangolo:"
+  }
+}

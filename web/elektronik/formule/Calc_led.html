@@ -1,0 +1,43 @@
+<html><head><link rel="stylesheet" href="include/stile.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=UnifrakturMaguntia">
+<link rel="stylesheet" href="include/jqmath.css">
+<script src="include/jquery.js"></script><script src="include/jqmath.js"></script>
+<script src="include/i18next.js"></script></head>
+<body><h2 id=title></h2>$$R={V_{cc}-n&sdot;V_f}/I_f$$<br><br>
+<div class=ls id=legend></div><table class=tls>
+<tr><td>V<sub>cc</sub></td><td><span id=Vcc></span> [<span class=unit data-i18n="unit.volt"></span>]</td></tr>
+<tr><td>V<sub>f</sub></td><td><span id=Vf></span> [<span class=unit data-i18n="unit.volt"></span>]</td></tr>
+<tr><td>I<sub>f</sub></td><td><span id=If></span> [<span class=unit data-i18n="unit.amp"></span>]</td></tr>
+<tr><td>R</td><td><span id=res></span> [<span class=unit data-i18n="[html]unit.ohm"></span>]</td></tr>
+<tr><td><i>n</i></td><td><span id=n></span></td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+</table>
+<br><h2 id=title2></h2><img src="led_pin.png">
+<br><br><table>
+<tr><th><span id=pos></span></th><th>&nbsp;&nbsp;</th><th><span id=neg></span></th></tr>
+<tr><td><span id=anode></span></td><td></td><td><span id=catode></span></td></tr>
+<tr><td><span id=llead></span></td><td></td><td><span id=slead></span></td></tr>
+<tr><td><span id=exround></span></td><td></td><td><span id=exflat></span></td></tr>
+</table>
+<script type="text/javascript">
+i18n.init({ fallbackLng:'en', resGetPath:'locales/__ns__-__lng__.json', useLocalStorage:false }, function() {
+	$("#title").text( i18n.t("led.title") );
+	$("#title2").text( i18n.t("led.title2") );
+	$("#legend").text( i18n.t("legend") );
+	$("#Vcc").text( i18n.t("voltage_supply") );
+	$("#Vf").text( i18n.t("led.Vf") );
+	$("#If").text( i18n.t("led.If") );
+	$("#res").text( i18n.t("resistance") );
+	$(".unit").i18n();
+	$("#n").text( i18n.t("led.num") );
+	$("#pos").text( i18n.t("led.pos") );
+	$("#neg").text( i18n.t("led.neg") );
+	$("#anode").text( i18n.t("led.anode") );
+	$("#catode").text( i18n.t("led.catode") );
+	$("#llead").text( i18n.t("led.llead") );
+	$("#slead").text( i18n.t("led.slead") );
+	$("#exround").text( i18n.t("led.exround") );
+	$("#exflat").text( i18n.t("led.exflat") );
+});
+</script>
+</body></html>

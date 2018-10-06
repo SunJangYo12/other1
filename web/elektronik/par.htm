@@ -1,0 +1,30 @@
+<!-- 
+Copyright © Iero Demetrio 2013 All Rights Reserved.
+No part of this page or any of its contents may be reproduced, copied, 
+modified or adapted, without the prior written consent of the author.
+ -->
+<html><head><link href="stile.css" rel="stylesheet"/></head><body><h2>Parallel/Centronics port</h2>
+<img src="pc_port/par_25.png"><br><font style="font-size:30%;">&nbsp;</font><br><font class=imgdescr>25 PIN D-SUB MALE connector</font></p>
+<img src="pc_port/par_36.png"><br><font style="font-size:30%;">&nbsp;</font><br><font class=imgdescr>36 PIN CENTRONICS MALE connector</font></p>
+<table><tr><th>Pin<br>(25&nbsp;pin)</th><th>Pin<br>(36&nbsp;pin)</th><th>Signal<br>name</th><th>Direct.</th><th>Register<br>bit</th></tr>
+<tr><td>1</td><td>1</td><td style="padding-top:5px;"><span style="border-top:thin solid;">Strobe</span></td><td>In/Out</td><td>Control-0</td></tr>
+<tr><td>2</td><td>2</td><td>Data0</td><td>Out</td><td>Data-0</td></tr>
+<tr><td>3</td><td>3</td><td>Data1</td><td>Out</td><td>Data-1</td></tr>
+<tr><td>4</td><td>4</td><td>Data2</td><td>Out</td><td>Data-2</td></tr>
+<tr><td>5</td><td>5</td><td>Data3</td><td>Out</td><td>Data-3</td></tr>
+<tr><td>6</td><td>6</td><td>Data4</td><td>Out</td><td>Data-4</td></tr>
+<tr><td>7</td><td>7</td><td>Data5</td><td>Out</td><td>Data-5</td></tr>
+<tr><td>8</td><td>8</td><td>Data6</td><td>Out</td><td>Data-6</td></tr>
+<tr><td>9</td><td>9</td><td>Data7</td><td>Out</td><td>Data-7</td></tr>
+<tr><td>10</td><td>10</td><td>Ack</td><td>In</td><td>Status-6</td></tr>
+<tr><td>11</td><td>11</td><td style="padding-top:5px;"><span style="border-top:thin solid;">Busy</span></td><td>In</td><td>Status-7</td></tr>
+<tr><td>12</td><td>12</td><td>Paper-Out</td><td>In</td><td>Status-5</td></tr>
+<tr><td>13</td><td>13</td><td>Select</td><td>In</td><td>Status-4</td></tr>
+<tr><td>14</td><td>14</td><td style="padding-top:5px;"><span style="border-top:thin solid;">Linefeed</span></td><td>In/Out</td><td>Control-1</td></tr>
+<tr><td>15</td><td>32</td><td>Error</td><td>In</td><td>Status-3</td></tr>
+<tr><td>16</td><td>31</td><td>Reset</td><td>In/Out</td><td>Control-2</td></tr>
+<tr><td>17</td><td>36</td><td style="padding-top:5px;"><span style="border-top:thin solid;">Select-Printer</span></td><td>In/Out</td><td>Control-3</td></tr>
+<tr><td>-</td><td>18,35</td><td>+5V</td><td>-</td><td>-</td></tr>
+<tr><td>-</td><td>15,34</td><td>n.c.</td><td>-</td><td>-</td></tr>
+<tr><td>18-25</td><td>16,17,<br>19-30,<br>33</td><td>Ground</td><td>-</td><td>-</td></tr>
+</table><br><br></body></html>

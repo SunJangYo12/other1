@@ -1,0 +1,57 @@
+<!-- 
+Copyright © Iero Demetrio 2013 All Rights Reserved.
+No part of this page or any of its contents may be reproduced, copied, 
+modified or adapted, without the prior written consent of the author.
+ -->
+<html><head><link href="stile.css" rel="stylesheet"/></head><body>
+<h2>Ethernet EIA/TIA-568A/B</h2><img src="eth/RJ-45_TIA-568A.png"><br><img src="eth/RJ-45_TIA-568B.png"></p>
+<table><tr><th rowspan=2>Pin</th><th colspan=2>Pair</th><th colspan=2>Signal</th><th rowspan=2>Wire</th><th colspan=2>Color</th></tr>
+<tr><th>T568A</th><th>T568B</th><th>10/100Base-T</th><th>1000Base-T</th><th>T568A</th><th>T568B</th></tr>
+<tr><td>1</td><td>3</td><td>2</td><td>TX+</td><td>BI_DA+</td><td>+/tip</td><td class=small><img src="eth/wire_white_green.png"><br>white/green</td><td class=small><img src="eth/wire_white_orange.png"><br>white/orange</td></tr>
+<tr><td>2</td><td>3</td><td>2</td><td>TX-</td><td>BI_DA-</td><td>-/ring</td><td class=small><img src="eth/wire_green.png"><br>green</td><td class=small><img src="eth/wire_orange.png"><br>orange</td></tr>
+<tr><td>3</td><td>2</td><td>3</td><td>RX+</td><td>BI_DB+</td><td>+/tip</td><td class=small><img src="eth/wire_white_orange.png"><br>white/orange</td><td class=small><img src="eth/wire_white_green.png"><br>white/green</td></tr>
+<tr><td>4</td><td>1</td><td>1</td><td></td><td>BI_DC+</td><td>-/ring</td><td class=small><img src="eth/wire_blue.png"><br>blue</td><td class=small><img src="eth/wire_blue.png"><br>blue</td></tr>
+<tr><td>5</td><td>1</td><td>1</td><td></td><td>BI_DC-</td><td>+/tip</td><td class=small><img src="eth/wire_white_blue.png"><br>white/blue</td><td class=small><img src="eth/wire_white_blue.png"><br>white/blue</td></tr>
+<tr><td>6</td><td>2</td><td>3</td><td>RX-</td><td>BI_DB-</td><td>-/ring</td><td class=small><img src="eth/wire_orange.png"><br>orange</td><td class=small><img src="eth/wire_green.png"><br>green</td></tr>
+<tr><td>7</td><td>4</td><td>4</td><td></td><td>BI_DD+</td><td>+/tip</td><td class=small><img src="eth/wire_white_brown.png"><br>white/brown</td><td class=small><img src="eth/wire_white_brown.png"><br>white/brown</td></tr>
+<tr><td>8</td><td>4</td><td>4</td><td></td><td>BI_DD-</td><td>-/ring</td><td class=small><img src="eth/wire_brown.png"><br>brown</td><td class=small><img src="eth/wire_brown.png"><br>brown</td></tr>
+</table>
+</p>Direct Connection EIA/TIA-568A<br><table><tr><td style="min-width:300px;padding:0px;"><img src="eth/RJ-45_TIA-568A.png" width=150><img src="eth/RJ-45_TIA-568A_1.png" width=150></td></tr></table>
+</p>Direct Connection EIA/TIA-568B<br><table><tr><td style="min-width:300px;padding:0px;"><img src="eth/RJ-45_TIA-568B.png" width=150><img src="eth/RJ-45_TIA-568B_1.png" width=150></td></tr></table>
+
+<br><hr><h2>Cross-over cable pinouts</h2></p>
+</p>Cross-over cable EIA/TIA-568A/B (10Base-T, 100Base-TX)<br><table><tr><td style="min-width:300px;padding:0px;"><img src="eth/RJ-45_TIA-568B.png" width=150><img src="eth/RJ-45_TIA-568A_1.png" width=150></td></tr></table>
+</p><b>10BASE-T or 100BASE-TX crossover</b>
+<table><tr><th rowspan=2>Pin</th><th colspan=3>Connection 1: T568A</th><th colspan=3>Connection 2: T568B</th></tr><tr><td><b>signal</b></td><td><b>pair</b></td><td><b>color</b></td><td><b>signal</b></td><td><b>pair</b></td><td><b>color</b></td></tr>
+<tr><td>1</td><td>BI_DA+</td><td>3</td><td class=small><img src="eth/wire_white_green.png"><br>white/green</td><td>BI_DB+</td><td>2</td><td class=small><img src="eth/wire_white_orange.png"><br>white/orange</td></tr>
+<tr><td>2</td><td>BI_DA-</td><td>3</td><td class=small><img src="eth/wire_green.png"><br>green</td><td>BI_DB-</td><td>2</td><td class=small><img src="eth/wire_orange.png"><br>orange</td></tr>
+<tr><td>3</td><td>BI_DB+</td><td>2</td><td class=small><img src="eth/wire_white_orange.png"><br>white/orange</td><td>BI_DA+</td><td>3</td><td class=small><img src="eth/wire_white_green.png"><br>white/green</td></tr>
+<tr><td>4</td><td></td><td>1</td><td class=small><img src="eth/wire_blue.png"><br>blue</td><td></td><td>1</td><td class=small><img src="eth/wire_blue.png"><br>blue</td></tr>
+<tr><td>5</td><td></td><td>1</td><td class=small><img src="eth/wire_white_blue.png"><br>white/blue</td><td></td><td>1</td><td class=small><img src="eth/wire_white_blue.png"><br>white/blue</td></tr>
+<tr><td>6</td><td>BI_DB-</td><td>2</td><td class=small><img src="eth/wire_orange.png"><br>orange</td><td>BI_DA-</td><td>3</td><td class=small><img src="eth/wire_green.png"><br>green</td></tr>
+<tr><td>7</td><td></td><td>4</td><td class=small><img src="eth/wire_white_brown.png"><br>white/brown</td><td></td><td>4</td><td class=small><img src="eth/wire_white_brown.png"><br>white/brown</td></tr>
+<tr><td>8</td><td></td><td>4</td><td class=small><img src="eth/wire_brown.png"><br>brown</td><td></td><td>4</td><td class=small><img src="eth/wire_brown.png"><br>brown</td></tr>
+</table>
+</p><b>Gigabit T568A crossover</b><br><font class=imgdescr>10BASE-T, 100BASE-TX, 100BASE-T4 or 1000BASE-T crossover</font>
+<table><tr><th rowspan=2>Pin</th><th colspan=3>Connection 1: T568A</th><th colspan=3>Connection 2: T568A Crossed</th></tr><tr><td><b>signal</b></td><td><b>pair</b></td><td><b>color</b></td><td><b>signal</b></td><td><b>pair</b></td><td><b>color</b></td></tr>
+<tr><td>1</td><td>BI_DA+</td><td>3</td><td class=small><img src="eth/wire_white_green.png"><br>white/green</td><td>BI_DB+</td><td>2</td><td class=small><img src="eth/wire_white_orange.png"><br>white/orange</td></tr>
+<tr><td>2</td><td>BI_DA-</td><td>3</td><td class=small><img src="eth/wire_green.png"><br>green</td><td>BI_DB-</td><td>2</td><td class=small><img src="eth/wire_orange.png"><br>orange</td></tr>
+<tr><td>3</td><td>BI_DB+</td><td>2</td><td class=small><img src="eth/wire_white_orange.png"><br>white/orange</td><td>BI_DA+</td><td>3</td><td class=small><img src="eth/wire_white_green.png"><br>white/green</td></tr>
+<tr><td>4</td><td>BI_DC+</td><td>1</td><td class=small><img src="eth/wire_blue.png"><br>blue</td><td>BI_DD+</td><td>4</td><td class=small><img src="eth/wire_white_brown.png"><br>white/brown</td></tr>
+<tr><td>5</td><td>BI_DC-</td><td>1</td><td class=small><img src="eth/wire_white_blue.png"><br>white/blue</td><td>BI_DD-</td><td>4</td><td class=small><img src="eth/wire_brown.png"><br>brown</td></tr>
+<tr><td>6</td><td>BI_DB-</td><td>2</td><td class=small><img src="eth/wire_orange.png"><br>orange</td><td>BI_DA-</td><td>3</td><td class=small><img src="eth/wire_green.png"><br>green</td></tr>
+<tr><td>7</td><td>BI_DD+</td><td>4</td><td class=small><img src="eth/wire_white_brown.png"><br>white/brown</td><td>BI_DC+</td><td>1</td><td class=small><img src="eth/wire_blue.png"><br>blue</td></tr>
+<tr><td>8</td><td>BI_DD-</td><td>4</td><td class=small><img src="eth/wire_brown.png"><br>brown</td><td>BI_DC-</td><td>1</td><td class=small><img src="eth/wire_white_blue.png"><br>white/blue</td></tr>
+</table>
+</p><b>Gigabit T568B crossover</b><br><font class=imgdescr>10BASE-T, 100BASE-TX, 100BASE-T4 or 1000BASE-T crossover</font>
+<table><tr><th rowspan=2>Pin</th><th colspan=3>Connection 1: T568B</th><th colspan=3>Connection 2: T568B Crossed</th></tr><tr><td><b>signal</b></td><td><b>pair</b></td><td><b>color</b></td><td><b>signal</b></td><td><b>pair</b></td><td><b>color</b></td></tr>
+<tr><td>1</td><td>BI_DA+</td><td>2</td><td class=small><img src="eth/wire_white_orange.png"><br>white/orange</td><td>BI_DB+</td><td>3</td><td class=small><img src="eth/wire_white_green.png"><br>white/green</td></tr>
+<tr><td>2</td><td>BI_DA-</td><td>2</td><td class=small><img src="eth/wire_orange.png"><br>orange</td><td>BI_DB-</td><td>3</td><td class=small><img src="eth/wire_green.png"><br>green</td></tr>
+<tr><td>3</td><td>BI_DB+</td><td>3</td><td class=small><img src="eth/wire_white_green.png"><br>white/green</td><td>BI_DA+ 	</td><td>2</td><td class=small><img src="eth/wire_white_orange.png"><br>white/orange</td></tr>
+<tr><td>4</td><td>BI_DC+</td><td>1</td><td class=small><img src="eth/wire_blue.png"><br>blue</td><td>BI_DD+</td><td>4</td><td class=small><img src="eth/wire_white_brown.png"><br>white/brown</td></tr>
+<tr><td>5</td><td>BI_DC-</td><td>1</td><td class=small><img src="eth/wire_white_blue.png"><br>white/blue</td><td>BI_DD-</td><td>4</td><td class=small><img src="eth/wire_brown.png"><br>brown</td></tr>
+<tr><td>6</td><td>BI_DB-</td><td>3</td><td class=small><img src="eth/wire_green.png"><br>green</td><td>BI_DA-</td><td>2</td><td class=small><img src="eth/wire_orange.png"><br>orange</td></tr>
+<tr><td>7</td><td>BI_DD+</td><td>4</td><td class=small><img src="eth/wire_white_brown.png"><br>white/brown</td><td>BI_DC+</td><td>1</td><td class=small><img src="eth/wire_blue.png"><br>blue</td></tr>
+<tr><td>8</td><td>BI_DD-</td><td>4</td><td class=small><img src="eth/wire_brown.png"><br>brown</td><td>BI_DC-</td><td>1</td><td class=small><img src="eth/wire_white_blue.png"><br>white/blue</td></tr>
+</table>
+<br><br></body></html>

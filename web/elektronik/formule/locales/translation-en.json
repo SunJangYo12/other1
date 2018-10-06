@@ -1,0 +1,110 @@
+{
+  "legend": "LEGEND:",
+  "resistance": "Resistance",
+  "conductance": "Conductance",
+  "voltage": "Voltage",
+  "voltage_in": "Input Voltage",
+  "voltage_out": "Output Voltage",
+  "voltage_ref": "Reference Voltage",
+  "current": "Current",
+  "current_out": "Output Current",
+  "voltage_supply": "Power supply Voltage",
+  "capacitance": "Capacitance",
+  "inductance": "Inductance",
+  "cutoff_freq": "Cutoff Frequency",
+  "power": "Power",
+  "resistivity": "Resistivity",
+  "conductivity": "Conductivity",
+  "length": "Length",
+  "area": "Area cross-section",
+  "freq": "Frequency",
+  "permeab": "Permeability",
+  "at": "At",
+
+  "unit": {
+  	"amp": "Ampere (A)",
+  	"volt": "Volt (V)",
+  	"ohm": "Ohm (&ohm;)",
+  	"hertz": "Hertz (Hz)",
+  	"henry": "Henry (H)",
+  	"farad": "Farad (F)",
+  	"watt": "Watt (W)",
+  	"siemens": "Siemens (S)",
+  	"ohm_m": "Ohm-metres (&ohm;&sdot;m)",
+  	"siemens_m": "Siemens per meter (S&sdot;m<sup>-1</sup>)",
+  	"meter": "meters (m)",
+  	"meter2": "square metres (m<sup>2</sup>)",
+  	"henry_m": "Henries per meter (H&sdot;m<sup>-1</sup>)"
+  },
+  
+  "op_ampl": {
+  	"title": "Operational Amplifier",
+  	"no_inv_ampl": "Non-inverting amplifier:",
+  	"inv_ampl": "Inverting amplifier:",
+  	"dif_ampl": "Difference amplifier:"
+  },
+  "filt": {
+  	"title": "Filters",
+  	"rc": "Simple R-C Filter:",
+  	"lc": "Simple L-C Filter:",
+  	"rl": "Simple R-L Filter:"
+  },
+  "led": {
+  	"title": "LED Resistance",
+  	"title2": "LED identification",
+  	"Vf": "LED Forward Voltage drop",
+  	"If": "LED Forward Current",
+  	"num": "Number of LEDs in series",
+  	"pos": "Positive terminal",
+  	"neg": "Negative terminal",
+  	"anode": "Anode (A)",
+  	"catode": "Cathode (K)",
+  	"llead": "Long lead",
+  	"slead": "Short lead",
+  	"exround": "Round exterior",
+  	"exflat": "Flat exterior"
+  },
+  "lm317": {
+  	"title": "Linear Voltage Regulators",
+  	"volt": "Voltage regulator:",
+  	"curr": "Current regulator:",
+  	"current_adj": "Current through Adj terminal"
+  },
+  "ohm": {
+  	"title": "Ohm's Law"
+  },
+  "part": {
+  	"title": "Voltage divider"
+  },
+  "react": {
+  	"title": "Reactance",
+  	"Creatt": "Capacitive Reactance",
+  	"Lreatt": "Inductive Reactance",
+  	"frison": "Resonant Frequency"
+  },
+  "se_pa": {
+  	"title": "Resistors in series/parallel",
+  	"ser": "Resistors in series:",
+  	"par": "Resistors in parallel:"
+  },
+  "Ccharge": {
+  	"title": "Capacitor Charge",
+  	"Ccharge": "Charge on capacitor:",
+  	"Ccurrent": "Charging current:",
+  	"c_voltage": "Capacitor Voltage"
+  },
+  "ind_design": {
+  	"title": "Inductance formulae",
+  	"cyl_air": "Cylindrical air-core coil",
+  	"cyl_air_short": "Short air-core cylindrical coil",
+  	"approximation": "Long solenoid approximation",
+  	"n": "Number of turns",
+  	"d": "Diameter of coil",
+  	"l": "Length of coil"
+  },
+  "y_delta": {
+  	"title": "Y-&Delta; transformation",
+  	"delta_y": "&Delta;-load to Y-load transformation:",
+  	"y_delta": "Y-load to &Delta;-load transformation:"
+  }
+}

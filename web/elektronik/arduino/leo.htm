@@ -1,0 +1,75 @@
+<!-- 
+Copyright © Iero Demetrio 2013 All Rights Reserved.
+No part of this page or any of its contents may be reproduced, copied, 
+modified or adapted, without the prior written consent of the author.
+ -->
+<html><head><link href="../stile.css" rel="stylesheet"/></head><body>
+<h2>Arduino Leonardo</h2><img src="leo.jpg"><br><font style="font-size:80%;">Arduino Leonardo Front View</font></p>
+
+<br><div class=ls>
+Processor: ATmega32u4 (8-bit, 16MHz, 2.5KB RAM, 32KB Flash)<br>
+Features: 20 digital I/O pins, 12 of which can be used as analog inputs, native USB support<br>
+</div><br>
+
+<h3>POWER header:
+<table><tr><th>Name</th><th>Function</th></tr>
+<tr><td>-</td><td>Not connected</td></tr>
+<tr><td>IOREF</td><td>Logic Reference (5V)</td></tr>
+<tr><td>RESET</td><td>RESET pin</td></tr>
+<tr><td>3.3V</td><td>3.3V</td></tr>
+<tr><td>5V</td><td>5V</td></tr>
+<tr><td>GND</td><td rowspan=2>Ground</td></tr>
+<tr><td>GND</td></tr>
+<tr><td>Vin</td><td>Input voltage (External power)</td></tr>
+</table><br>
+
+ANALOG header:
+<table><tr><th>Name</th><th>MCU pin</th><th>Function</th></tr>
+<tr><td>A0</td><td>PF7 (36)</td><td>ADC7/TD1</td></tr>
+<tr><td>A1</td><td>PF6 (37)</td><td>ADC6/TDO</td></tr>
+<tr><td>A2</td><td>PF5 (38)</td><td>ADC5/TMS</td></tr>
+<tr><td>A3</td><td>PF4 (39)</td><td>ADC4/TCK</td></tr>
+<tr><td>A4</td><td>PF1 (40)</td><td>ADC1</td></tr>
+<tr><td>A5</td><td>PF0 (41)</td><td>ADC0</td></tr>
+</table><br>
+
+DIGITAL header:
+<table><tr><th>Name</th><th>MCU pin</th><th>Function</th></tr>
+<tr><td>0</td><td>PD2 (20)</td><td>RXD1/INT2</td></tr>
+<tr><td>1</td><td>PD3 (21)</td><td>TXD1/INT3</td></tr>
+<tr><td>2</td><td>PD1 (19)</td><td>SDA/INT1</td></tr>
+<tr><td>3</td><td>PD0 (18)</td><td>SCL/OC0B/INT0 (PWM 8bit)</td></tr>
+<tr><td>4</td><td>PD4 (25)</td><td>ICP1/ADC8</td></tr>
+<tr><td>5</td><td>PC6 (31)</td><td>OC3A/OC4A (PWM HS)</td></tr>
+<tr><td>6</td><td>PD7 (27)</td><td>T0/OC4D/ADC10 (PWM HS)</td></tr>
+<tr><td>7</td><td>PE6 (1)</td><td>INT6/AIN0</td></tr>
+<tr><td>8</td><td>PB4 (28)</td><td>PCINT4/ADC11</td></tr>
+<tr><td>9</td><td>PB5 (29)</td><td>PCINT5/OC1A/OC4B/ADC12 (PWM 16bit)</td></tr>
+<tr><td>10</td><td>PB6 (30)</td><td>PCINT6/OC1B/OC4B/ADC13 (PWM 16bit)</td></tr>
+<tr><td>11</td><td>PB7 (12)</td><td>PCINT7/OC0A/OC1C/RTS (PWM 8-16bit)</td></tr>
+<tr><td>12</td><td>PD6 (26)</td><td>T1/OC4D/ADC9 (PWM 16bit)</td></tr>
+<tr><td>13</td><td>PC7 (32)</td><td>ICP3/CLK0/OC4A (PWM 10bit)(LED)</td></tr>
+<tr><td>GND</td><td colspan=2>Ground</td></tr>
+<tr><td>AREF</td><td>AREF (42)</td><td>Analog Ref.</td></tr>
+<tr><td>SDA</td><td>PD1 (19)</td><td>SDA/INT1</td></tr>
+<tr><td>SCL</td><td>PD0 (18)</td><td>SCL/OC0B/INT0 (PWM 8bit)</td></tr>
+</table><br>
+
+ICSP header:
+<table><tr><th>Name</th><th>MCU pin</th><th>Function</th></tr>
+<tr><td>1</td><td>PB3 (11)</td><td>PDO/PCINT3/MISO</td></tr>
+<tr><td>2 </td><td colspan=2>VCC (5 V)</td></tr>
+<tr><td>3</td><td>PB1 (9)</td><td>PCINT1/SCLK</td></tr>
+<tr><td>4</td><td>PB2 (10)</td><td>PDI/PCINT2/MOSI</td></tr>
+<tr><td>5</td><td>RESET (13)</td><td>RESET</td></tr>
+<tr><td>6</td><td colspan=2>Ground</td></tr>
+</table><br>
+
+</h3>
+<div class=ls><b>Notes:</b><br>
+OCxA/OCxB/OCxC can be used for PWM output.<br>
+Absolute max current per pin is 40 mA (20 mA recommended).<br>
+Absolute max current for the entire package is 200 mA.<br>
+</div>
+
+<br><br></body></html>

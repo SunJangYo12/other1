@@ -1,0 +1,23 @@
+<html><head><link rel="stylesheet" href="include/stile.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=UnifrakturMaguntia">
+<link rel="stylesheet" href="include/jqmath.css">
+<script src="include/jquery.js"></script><script src="include/jqmath.js"></script>
+<script src="include/i18next.js"></script></head>
+<body class=left><h2 id=title data-i18n="[html]y_delta.title"></h2>
+<span id=delta_y data-i18n="[html]y_delta.delta_y"></span><br>$$R_1={R_bR_c}/{R_a+R_b+R_c}$$ $$R_2={R_aR_c}/{R_a+R_b+R_c}$$ $$R_3={R_aR_b}/{R_a+R_b+R_c}$$<br>
+<span id=y_delta data-i18n="[html]y_delta.y_delta"></span><br>$$R_a={R_1R_2+R_2R_3+R_3R_1}/R_1$$ $$R_b={R_1R_2+R_2R_3+R_3R_1}/R_2$$ $$R_c={R_1R_2+R_2R_3+R_3R_1}/R_3$$<br><br>
+<div class=ls id=legend></div><table class=tls>
+<tr><td>R<sub>x</sub></td><td><span id=res></span> [<span id=R_unit data-i18n="[html]unit.ohm"></span>]</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+</table>
+<script type="text/javascript">
+i18n.init({ fallbackLng:'en', resGetPath:'locales/__ns__-__lng__.json', useLocalStorage:false }, function() {
+	$("#title").i18n();
+	$("#delta_y").i18n();
+	$("#y_delta").i18n();
+	$("#legend").text( i18n.t("legend") );
+	$("#res").text( i18n.t("resistance") );
+	$("#R_unit").i18n();
+});
+</script>
+</body></html>

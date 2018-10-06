@@ -1,0 +1,23 @@
+<html><head><link rel="stylesheet" href="include/stile.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=UnifrakturMaguntia">
+<link rel="stylesheet" href="include/jqmath.css">
+<script src="include/jquery.js"></script><script src="include/jqmath.js"></script>
+<script src="include/i18next.js"></script></head>
+<body><h2 id=title></h2>$$V_{out}=V_{in}\,{R_2}/{R_1+R_2}$$<br><br>
+<div class=ls id=legend></div><table class=tls>
+<tr><td>V<sub>out</sub></td><td><span id=vout></span> [<span class=unit data-i18n="unit.volt"></span>]</td></tr>
+<tr><td>V<sub>in</sub></td><td><span id=vin></span> [<span class=unit data-i18n="unit.volt"></span>]</td></tr>
+<tr><td>R<sub>x</sub></td><td><span id=res></span> [<span class=unit data-i18n="[html]unit.ohm"></span>]</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+</table>
+<script type="text/javascript">
+i18n.init({ fallbackLng:'en', resGetPath:'locales/__ns__-__lng__.json', useLocalStorage:false }, function() {
+	$("#title").text( i18n.t("part.title") );
+	$("#legend").text( i18n.t("legend") );
+	$("#vout").text( i18n.t("voltage_out") );
+	$("#vin").text( i18n.t("voltage_in") );
+	$("#res").text( i18n.t("resistance") );
+	$(".unit").i18n();
+});
+</script>
+</body></html>

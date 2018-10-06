@@ -1,0 +1,33 @@
+<html><head><link rel="stylesheet" href="include/stile.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=UnifrakturMaguntia">
+<link rel="stylesheet" href="include/jqmath.css">
+<script src="include/jquery.js"></script><script src="include/jqmath.js"></script>
+<script src="include/i18next.js"></script></head>
+<body class=left><h2 id=title></h2>
+<span id=cyl_air></span> (*)<br>$$L=&mu;\,N^2{&pi;d^2}/{4l}$$<br>
+<span id=cyl_air_short></span><br>$$L={d^2\,N^2}/{18d+40l}\,10^{-6}/0.0254$$<br>
+<div class=ls>(*) <span id=approximation></span></div>
+<br><br><div class=ls id=legend></div><table class=tls>
+<tr><td>L</td><td><span id=ind></span> [<span class=unit data-i18n="unit.henry"></span>]</td></tr>
+<tr><td>&mu;</td><td><span id=permeab></span> [<span class=unit data-i18n="[html]unit.henry_m"></span>]</td></tr>
+<tr><td>N</td><td><span id=turn></span></td></tr>
+<tr><td>d</td><td><span id=diam></span> [<span class=unit data-i18n="unit.meter"></span>]</td></tr>
+<tr><td>l</td><td><span id=lung></span> [<span class=unit data-i18n="unit.meter"></span>]</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+</table>
+<script type="text/javascript">
+i18n.init({ fallbackLng:'en', resGetPath:'locales/__ns__-__lng__.json', useLocalStorage:false }, function() {
+	$("#title").text( i18n.t("ind_design.title") );
+	$("#cyl_air").text( i18n.t("ind_design.cyl_air") );
+	$("#cyl_air_short").text( i18n.t("ind_design.cyl_air_short") );
+	$("#approximation").text( i18n.t("ind_design.approximation") );
+	$("#legend").text( i18n.t("legend") );
+	$("#ind").text( i18n.t("inductance") );
+	$("#permeab").text( i18n.t("permeab") );
+	$("#turn").text( i18n.t("ind_design.n") );
+	$("#diam").text( i18n.t("ind_design.d") );
+	$("#lung").text( i18n.t("ind_design.l") );
+	$(".unit").i18n();
+});
+</script>
+</body></html>

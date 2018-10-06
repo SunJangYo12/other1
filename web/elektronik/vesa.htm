@@ -1,0 +1,62 @@
+﻿<!-- 
+Copyright © Iero Demetrio 2013 All Rights Reserved.
+No part of this page or any of its contents may be reproduced, copied, 
+modified or adapted, without the prior written consent of the author.
+ -->
+<html><head><link href="stile.css" rel="stylesheet"/><style type="text/css">
+td.aud_out{background:#ccffff;}
+td.aud_in{background:#ccffcc;}
+td.vga{background:#ff9999;}
+td.frw{background:#ffccff;}
+td.usb{background:#ffcc99;}
+td.ddc{background:#9999ff;}
+td.vid_in{background:#66cc66;}
+td.dvi{background:#ffff99;}
+</style></head><body>
+<h4>EVC (Enhanced Video Connector)<br>P&D (VESA Plug and Display)</h4>
+<img src="video/vesa.png"><br><font class=imgdescr>Female VESA connector (at the videocard)</font></p>
+<table><th>Pin</th><th>EVC v.1</th><th>P&D Analog/Digital</th><th>P&D Digital</th></tr>
+<tr><th>1</th><td class=aud_out>Audio output, Right</td><td class=dvi colspan=2>TMDS Data 2+</td></tr>
+<tr><th>2</th><td class=aud_out>Audio output, Left</td><td class=dvi colspan=2>TMDS Data 2-</td></tr>
+<tr><th>3</th><td class=aud_out>Audio output return</td><td class=dvi colspan=2>TMDS Data 2 Return</td></tr>
+<tr><th>4</th><td class=vga colspan=2>Sync return</td><td>-</td></tr>
+<tr><th>5</th><td class=vga>Horizontal sync</td><td class=vga>Horizontal Sync / Composite Sync</td><td>-</td></tr>
+<tr><th>6</th><td class=vga colspan=2>Vertical sync</td><td>-</td></tr>
+<tr><th>7</th><td>Reserved</td><td colspan=2 class=dvi>TMDS Clock Return</td></tr>
+<tr><th>8</th><td>Reserved</td><td colspan=2>Change Power+</td></tr>
+<tr><th>9</th><td class=frw colspan=3>1394 Pair A Data-</td></tr>
+<tr><th>10</th><td class=frw colspan=3>1394 Pair A Data +</td></tr>
+<tr><th>11</th><td>Change Power +</td><td class=dvi colspan=2>TMDS Data 1+</td></tr>
+<tr><th>12</th><td>Change Power-</td><td class=dvi colspan=2>TMDS Data 1-</td></tr>
+<tr><th>13</th><td class=vid_in>Video input, Y or composite in</td><td class=dvi colspan=2>TMDS Data 1 Return</td></tr>
+<tr><th>14</th><td class=vid_in>Video input, return</td><td class=dvi colspan=2>TMDS Clock +</td></tr>
+<tr><th>15</th><td class=vid_in>Video input, C in</td><td class=dvi colspan=2>TMDS Clock -</td></tr>
+<tr><th>16</th><td class=usb colspan=3>USB Data +</td></tr>
+<tr><th>17</th><td class=usb colspan=3>USB Data -</td></tr>
+<tr><th>18</th><td>USB/1394 common mode shield</td><td colspan=2>1394 Outer Shield / Change Power -</td></tr>
+<tr><th>19</th><td class=frw colspan=3>1394 Vg</td></tr>
+<tr><th>20</th><td class=frw colspan=3>1394 Vp</td></tr>
+<tr><th>21</th><td class=aud_in>Audio input, Left</td><td class=dvi colspan=2>TMDS Data 0+</td></tr>
+<tr><th>22</th><td class=aud_in>Audio input, Right</td><td class=dvi colspan=2>TMDS Data 0-</td></tr>
+<tr><th>23</th><td class=aud_in>Audio input return</td><td class=dvi colspan=2>TMDS Data 0 Return</td></tr>
+<tr><th>24</th><td colspan=2>Stereo sync</td><td>-</td></tr>
+<tr><th>25</th><td class=ddc colspan=2>DDC / Stereo Sync Return</td><td class=ddc>DDC return</td></tr>
+<tr><th>26</th><td class=ddc colspan=3>DDC Data (SDA)</td></tr>
+<tr><th>27</th><td class=ddc colspan=3>DDC Clock (SCL)</td></tr>
+<tr><th>28</th><td colspan=3>+5 VDC</td></tr>
+<tr><th>29</th><td class=frw colspan=3>1394 pair B, clock +</td></tr>
+<tr><th>30</th><td class=frw colspan=3>1394 pair B, clock -</td></tr>
+<tr><th>C1</th><td class=vga colspan=2>Red Video</td><td>-</td></tr>
+<tr><th>C2</th><td class=vga colspan=2>Green Video</td><td>-</td></tr>
+<tr><th>C3</th><td class=vga colspan=2>Pixel Clock</td><td>-</td></tr>
+<tr><th>C4</th><td class=vga colspan=2>Blue Video</td><td>-</td></tr>
+<tr><th>C5</th><td class=vga colspan=2>Video/Pixel Clock Ground</td><td>-</td></tr>
+</table>
+<div class=ls>
+<br><b>Note:</b> The pin-out of EVC was changed between version 1 and version 2 to align it with the P&D pin-out (Change Power +, and Change Power - was moved)
+<br><br><b>Interfaces:</b>
+<table><tr><td class=aud_out width=50%>Audio output</td><td class=aud_in width=50%>Audio input</td></tr>
+<tr><td class=vga>Analog Video</td><td class=dvi>Digital Video</td></tr>
+<tr><td class=ddc>DDC Interface</td><td class=vid_in>Video input</td></tr>
+<tr><td class=usb>USB</td><td class=frw>Firewire</td></tr></table>
+</div><br><br></body></html>

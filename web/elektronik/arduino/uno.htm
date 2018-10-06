@@ -1,0 +1,86 @@
+<!-- 
+Copyright © Iero Demetrio 2013 All Rights Reserved.
+No part of this page or any of its contents may be reproduced, copied, 
+modified or adapted, without the prior written consent of the author.
+ -->
+<html><head><link href="../stile.css" rel="stylesheet"/></head><body>
+<h2>Arduino Uno</h2><img src="uno_R3.jpg"><br><font style="font-size:80%;">Arduino Uno (R3) Front View</font></p>
+
+<br><div class=ls>
+Processor: ATmega328 (8-bit, 16MHz, 2KB RAM, 32KB Flash)<br>
+Features: 14 digital I/O pins, 6 analog input pins<br>
+</div><br>
+
+<h3>POWER header:
+<table><tr><th>Name</th><th>Function</th></tr>
+<tr><td>-</td><td>Not connected</td></tr>
+<tr><td>IOREF</td><td>Logic Reference (5V) (*)</td></tr>
+<tr><td>RESET</td><td>PCINT14/RESET pin</td></tr>
+<tr><td>3.3V</td><td>3.3V</td></tr>
+<tr><td>5V</td><td>5V</td></tr>
+<tr><td>GND</td><td rowspan=2>Ground</td></tr>
+<tr><td>GND</td></tr>
+<tr><td>Vin</td><td>Input voltage (External power)</td></tr>
+</table><br>
+
+ANALOG header:
+<table><tr><th>Name</th><th>MCU pin</th><th>Function</th></tr>
+<tr><td>14 (A0)</td><td>PC0 (23)</td><td>ADC0/PCINT8</td></tr>
+<tr><td>15 (A1)</td><td>PC1 (24)</td><td>ADC1/PCINT9</td></tr>
+<tr><td>16 (A2)</td><td>PC2 (25)</td><td>ADC2/PCINT10</td></tr>
+<tr><td>17 (A3)</td><td>PC3 (26)</td><td>ADC3/PCINT11</td></tr>
+<tr><td>18 (A4)</td><td>PC4 (27)</td><td>ADC4/SDA/PCINT12</td></tr>
+<tr><td>19 (A5)</td><td>PC5 (28)</td><td>ADC5/SCL/PCINT13</td></tr>
+</table><br>
+
+DIGITAL header:
+<table><tr><th>Name</th><th>MCU pin</th><th>Function</th></tr>
+<tr><td>0</td><td>PD0 (2)</td><td>PCINT16/RXD</td></tr>
+<tr><td>1</td><td>PD1 (3)</td><td>PCINT17/TXD</td></tr>
+<tr><td>2</td><td>PD2 (4)</td><td>PCINT18/INT0</td></tr>
+<tr><td>3</td><td>PD3 (5)</td><td>PCINT19/OC2B/INT1 (PWM)</td></tr>
+<tr><td>4</td><td>PD4 (6)</td><td>PCINT20/XCK/T0</td></tr>
+<tr><td>5</td><td>PD5 (11)</td><td>PCINT21/OC0B/T1 (PWM)</td></tr>
+<tr><td>6</td><td>PD6 (12)</td><td>PCINT22/OC0A/AIN0 (PWM)</td></tr>
+<tr><td>7</td><td>PD7 (13)</td><td>PCINT23/AIN1</td></tr>
+<tr><td>8</td><td>PB0 (14)</td><td>PCINT0/CLKO/ICP1</td></tr>
+<tr><td>9</td><td>PB1 (15)</td><td>OC1A/PCINT1 (PWM)</td></tr>
+<tr><td>10</td><td>PB2 (16)</td><td>SS/OC1B/PCINT2 (PWM)</td></tr>
+<tr><td>11</td><td>PB3 (17)</td><td>MOSI/OC2A/PCINT3 (PWM)</td></tr>
+<tr><td>12</td><td>PB4 (18)</td><td>MISO/PCINT4</td></tr>
+<tr><td>13</td><td>PB5 (19)</td><td>SCK/PCINT5 (LED)</td></tr>
+<tr><td>GND</td><td colspan=2>Ground</td></tr>
+<tr><td>AREF</td><td>AREF (21)</td><td>Analog Ref.</td></tr>
+<tr><td>18 (A4)</td><td>PC4 (27)</td><td>ADC4/SDA/PCINT12 (*)</td></tr>
+<tr><td>19 (A5)</td><td>PC5 (28)</td><td>ADC5/SCL/PCINT13 (*)</td></tr>
+</table><br>
+
+ICSP header:
+<table><tr><th>Name</th><th>MCU pin</th><th>Function</th></tr>
+<tr><td>1</td><td>PB4 (18)</td><td>MISO/PCINT4</td></tr>
+<tr><td>2 </td><td colspan=2>VCC (5 V)</td></tr>
+<tr><td>3</td><td>PB5 (19)</td><td>SCK/PCINT5</td></tr>
+<tr><td>4</td><td>PB3 (17)</td><td>MOSI/OC2A/PCINT3</td></tr>
+<tr><td>5</td><td>PC6 (1)</td><td>RESET/PCINT14</td></tr>
+<tr><td>6</td><td colspan=2>Ground</td></tr>
+</table><br>
+
+ICSP header (USB interface):
+<table><tr><th>Name</th><th>Function</th></tr>
+<tr><td>1</td><td>MISO2</td></tr>
+<tr><td>2 </td><td>VCC (5 V)</td></tr>
+<tr><td>3</td><td>SCK2</td></tr>
+<tr><td>4</td><td>MOSI2</td></tr>
+<tr><td>5</td><td>RESET</td></tr>
+<tr><td>6</td><td>Ground</td></tr>
+</table><br>
+
+</h3>
+<div class=ls><b>Notes:</b><br>
+(*) pins available only on Rev.3<br>
+OCxA/OCxB can be used for PWM output.<br>
+Absolute max current per pin is 40 mA (20 mA recommended).<br>
+Absolute max current for the entire package is 200 mA.<br>
+</div>
+
+<br><br></body></html>

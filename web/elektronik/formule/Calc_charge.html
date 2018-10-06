@@ -1,0 +1,35 @@
+<html><head><link rel="stylesheet" href="include/stile.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=UnifrakturMaguntia">
+<link rel="stylesheet" href="include/jqmath.css">
+<script src="include/jquery.js"></script><script src="include/jqmath.js"></script>
+<script src="include/i18next.js"></script></head>
+<body class=left><h2 id=title></h2>
+<span id=Ccharge></span><br>$$Q=C\,V_b(1-e^{-t/{RC}})$$<br>
+<span id=Ccurrent></span><br>$$I=V_b/R\,e^{-t/{RC}}$$<br>
+<span id=at1>At</span> $t=0$:<br>$Q=0$,&nbsp;&nbsp;$V_C=0$,&nbsp;&nbsp;$I=V_b/R$.<br><br>
+<span id=at2>At</span> $t&rarr;&infin;$:<br>$Q=C\,V_b$,&nbsp;&nbsp;$V_C=V_b$,&nbsp;&nbsp;$I=0$.<br><br><br>
+<div class=ls id=legend>LEGEND:</div><table class=tls>
+<tr><td>V<sub>b</sub></td><td><span id=vin></span> [<span class=unit data-i18n="unit.volt"></span>]</td></tr>
+<tr><td>V<sub>c</sub></td><td><span id=vc></span> [<span class=unit data-i18n="unit.volt"></span>]</td></tr>
+<tr><td>I</td><td><span id=current></span> [<span class=unit data-i18n="unit.amp"></span>]</td></tr>
+<tr><td>R</td><td><span id=res></span> [<span class=unit data-i18n="[html]unit.ohm"></span>]</td></tr>
+<tr><td>C</td><td><span id=con></span> [<span class=unit data-i18n="unit.farad"></span>]</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+</table>
+<script type="text/javascript">
+i18n.init({ fallbackLng:'en', resGetPath:'locales/__ns__-__lng__.json', useLocalStorage:false }, function() {
+	$("#title").text( i18n.t("Ccharge.title") );
+	$("#Ccharge").text( i18n.t("Ccharge.Ccharge") );
+	$("#Ccurrent").text( i18n.t("Ccharge.Ccurrent") );
+	$("#at1").text( i18n.t("at") );
+	$("#at2").text( i18n.t("at") );
+	$("#legend").text( i18n.t("legend") );
+	$("#vin").text( i18n.t("voltage_in") );
+	$("#vc").text( i18n.t("Ccharge.c_voltage") );
+	$("#current").text( i18n.t("current") );
+	$("#res").text( i18n.t("resistance") );
+	$("#con").text( i18n.t("capacitance") );
+	$(".unit").i18n();
+});
+</script>
+</body></html>

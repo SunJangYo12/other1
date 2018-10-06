@@ -1,0 +1,75 @@
+<!-- 
+Copyright © Iero Demetrio 2013 All Rights Reserved.
+No part of this page or any of its contents may be reproduced, copied, 
+modified or adapted, without the prior written consent of the author.
+ -->
+<html><head><link href="stile.css" rel="stylesheet"/></head><body>
+<h3>10-pin JTAG/SWD</h3>
+<table class=padleft><tr><th>Name</th><th>Pin</th><th>Pin</th><th>Name</th></tr>
+<tr><td>Vref</td><th>1</th><th>2</th><td><font color=orange>SWDIO</font>/TMS</td></tr>
+<tr><td>GND</td><th>3</th><th>4</th><td><font color=orange>SWDCLK</font>/TCLK</td></tr>
+<tr><td>GND</td><th>5</th><th>6</th><td><font color=orange>SWO</font>/TDO</td></tr>
+<tr><td>-</td><th>7</th><th>8</th><td><font color=orange>NC</font>/TDI</td></tr>
+<tr><td>GNDDetect</td><th>9</th><th>10</th><td>nRESET</td></tr>
+</table><br>
+<h3>ARM-20 JTAG</h3>
+<table class=padleft><tr><th>Name</th><th>Pin</th><th>Pin</th><th>Name</th></tr>
+<tr><td>VREF</td><th>1</th><th>2</th><td>VSUPPLY</td></tr>
+<tr><td>nTRST</td><th>3</th><th>4</th><td>GND</td></tr>
+<tr><td>TDI</td><th>5</th><th>6</th><td>GND</td></tr>
+<tr><td>TMS</td><th>7</th><th>8</th><td>GND</td></tr>
+<tr><td>TCK</td><th>9</th><th>10</th><td>GND</td></tr>
+<tr><td>RTCK</td><th>11</th><th>12</th><td>GND</td></tr>
+<tr><td>TDO</td><th>13</th><th>14</th><td>GND</td></tr>
+<tr><td>nSRST</td><th>15</th><th>16</th><td>GND</td></tr>
+<tr><td>DBGRQ</td><th>17</th><th>18</th><td>GND</td></tr>
+<tr><td>DGBACK</td><th>19</th><th>20</th><td>GND</td></tr>
+</table><br>
+<h3>ARM-14 JTAG</h3>
+<table class=padleft><tr><th>Name</th><th>Pin</th><th>Pin</th><th>Name</th></tr>
+<tr><td>VREF</td><th>1</th><th>2</th><td>GND</td></tr>
+<tr><td>nTRST</td><th>3</th><th>4</th><td>GND</td></tr>
+<tr><td>TDI</td><th>5</th><th>6</th><td>GND</td></tr>
+<tr><td>TMS</td><th>7</th><th>8</th><td>GND</td></tr>
+<tr><td>TCK</td><th>9</th><th>10</th><td>GND</td></tr>
+<tr><td>TDO</td><th>11</th><th>12</th><td>nSRST</td></tr>
+<tr><td>VREF</td><th>13</th><th>14</th><td>GND</td></tr>
+</table><br>
+<h3>MIPS EJTAG</h3>
+<table class=padleft><tr><th>Name</th><th>Pin</th><th>Pin</th><th>Name</th></tr>
+<tr><td>nTRST</td><th>1</th><th>2</th><td>GND</td></tr>
+<tr><td>TDI</td><th>3</th><th>4</th><td>GND</td></tr>
+<tr><td>TDO</td><th>5</th><th>6</th><td>GND</td></tr>
+<tr><td>TMS</td><th>7</th><th>8</th><td>GND</td></tr>
+<tr><td>TCK</td><th>9</th><th>10</th><td>GND</td></tr>
+<tr><td>nSRST</td><th>11</th><th>12</th><td></td></tr>
+<tr><td>DINT</td><th>13</th><th>14</th><td>VREF</td></tr>
+</table><br>
+<h3>AVR JTAG</h3>
+<table class=padleft><tr><th>Name</th><th>Pin</th><th>Pin</th><th>Name</th></tr>
+<tr><td>TCK</td><th>1</th><th>2</th><td>GND</td></tr>
+<tr><td>TDO</td><th>3</th><th>4</th><td>VREF</td></tr>
+<tr><td>TMS</td><th>5</th><th>6</th><td>nSRST</td></tr>
+<tr><td>-</td><th>7</th><th>8</th><td>nTRST</td></tr>
+<tr><td>TDI</td><th>9</th><th>10</th><td>GND</td></tr>
+</table><br>
+<h3>Maxim MAXQ JTAG</h3>
+<table class=padleft><tr><th>Name</th><th>Pin</th><th>Pin</th><th>Name</th></tr>
+<tr><td>TCK</td><th>1</th><th>2</th><td>GND</td></tr>
+<tr><td>TDO</td><th>3</th><th>4</th><td>VREF</td></tr>
+<tr><td>TMS</td><th>5</th><th>6</th><td>nSRST</td></tr>
+<tr><td>-</td><th>7</th><th>8</th><td>VSUPPLY</td></tr>
+<tr><td>TDI</td><th>9</th><th>10</th><td>GND</td></tr>
+</table><br>
+<h3>Texas Instruments MSP430 JTAG</h3>
+<table class=padleft><tr><th>Name</th><th>Pin</th><th>Pin</th><th>Name</th></tr>
+<tr><td>TDO</td><th>1</th><th>2</th><td>VREF</td></tr>
+<tr><td>TDI</td><th>3</th><th>4</th><td>-</td></tr>
+<tr><td>TMS</td><th>5</th><th>6</th><td>TCLK</td></tr>
+<tr><td>TCK</td><th>7</th><th>8</th><td>VPP</td></tr>
+<tr><td>GND</td><th>9</th><th>10</th><td>-</td></tr>
+<tr><td>nSRST</td><th>11</th><th>12</th><td>-</td></tr>
+<tr><td>-</td><th>13</th><th>14</th><td>-</td></tr>
+</table><br>
+<div class=ls>Note: There are usually different way to connect JTAG header to the target. Always check the datasheet.</div>
+<br><br></body></html>

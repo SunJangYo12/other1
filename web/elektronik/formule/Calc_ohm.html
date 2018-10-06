@@ -1,0 +1,39 @@
+<html><head><link rel="stylesheet" href="include/stile.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=UnifrakturMaguntia">
+<link rel="stylesheet" href="include/jqmath.css">
+<script src="include/jquery.js"></script><script src="include/jqmath.js"></script>
+<script src="include/i18next.js"></script></head>
+<body><h2 id=title></h2><table width=100%>
+<tr><td width=50%>$$V=R&sdot;I$$</td><td width=50%>$$I=V/R$$</td></tr>
+<tr><td>$$R=V/I$$</td><td width=50%>$$R=&rho;l/A$$</td></tr>
+<tr><td>$$G=I/V$$</td><td width=50%>$$G=&sigma;A/l$$</td></tr>
+</table><br><img src="ohm_law_pie.png"><br><br>
+<div class=ls id=legend></div><table class=tls>
+<tr><td>V</td><td><span id=volt></span> [<span class=unit data-i18n="unit.volt"></span>]</td></tr>
+<tr><td>I</td><td><span id=curr></span> [<span class=unit data-i18n="unit.amp"></span>]</td></tr>
+<tr><td>R</td><td><span id=res></span> [<span class=unit data-i18n="[html]unit.ohm"></span>]</td></tr>
+<tr><td>G</td><td><span id=cond></span> [<span class=unit data-i18n="unit.siemens"></span>]</td></tr>
+<tr><td>P</td><td><span id=power></span> [<span class=unit data-i18n="unit.watt"></span>]</td></tr>
+<tr><td>&rho;</td><td><span id=resist></span> [<span class=unit data-i18n="[html]unit.ohm_m"></span>]</td></tr>
+<tr><td>&sigma;</td><td><span id=conduct></span> [<span class=unit data-i18n="[html]unit.siemens_m"></span>]</td></tr>
+<tr><td><i>l</i></td><td><span id=length></span> [<span class=unit data-i18n="unit.meter"></span>]</td></tr>
+<tr><td>A</td><td><span id=area></span> [<span class=unit data-i18n="[html]unit.meter2"></span>]</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td></td></tr>
+</table>
+<script type="text/javascript">
+i18n.init({ fallbackLng:'en', resGetPath:'locales/__ns__-__lng__.json', useLocalStorage:false }, function() {
+	$("#title").text( i18n.t("ohm.title") );
+	$("#legend").text( i18n.t("legend") );
+	$("#volt").text( i18n.t("voltage") );
+	$("#curr").text( i18n.t("current") );
+	$("#res").text( i18n.t("resistance") );
+	$("#cond").text( i18n.t("conductance") );
+	$("#power").text( i18n.t("power") );
+	$("#resist").text( i18n.t("resistivity") );
+	$("#conduct").text( i18n.t("conductivity") );
+	$("#length").text( i18n.t("length") );
+	$("#area").text( i18n.t("area") );
+	$(".unit").i18n();
+});
+</script>
+</body></html>

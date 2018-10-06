@@ -1,0 +1,71 @@
+﻿<!-- 
+Copyright © Iero Demetrio 2013 All Rights Reserved.
+No part of this page or any of its contents may be reproduced, copied, 
+modified or adapted, without the prior written consent of the author.
+ -->
+<html><head><link href="stile.css" rel="stylesheet"/></head><body>
+<img src="varie/obdii.png"><br><font style="font-size: 80%">OBD-II car connector</font></p>
+<table class=padleft><tr><th>Pin</th><th>Signal</th><th>Description</th></tr>
+<tr><th>1</th><td>-</td><td></td></tr>
+<tr><th>2</th><td>J1850 Bus+</td><td>Bus positive Line of SAE-J1850</td></tr>
+<tr><th>3</th><td>-</td><td></td></tr>
+<tr><th>4</th><td>Chassis Ground</td><td></td></tr>
+<tr><th>5</th><td>Signal Ground</td><td></td></tr>
+<tr><th>6</th><td>CAN High (J-2284)</td><td>CAN high (ISO 15765-4 and J2234)</td></tr>
+<tr><th>7</th><td>ISO 9141-2 K Line</td><td>K line of ISO 9141-2 and ISO 14230-4</td></tr>
+<tr><th>8</th><td>-</td><td></td></tr>
+<tr><th>9</th><td>-</td><td>Tachometer signal on some cars like Toyota</td></tr>
+<tr><th>10</th><td>J1850 Bus-</td><td>Bus negative Line of J1850</td></tr>
+<tr><th>11</th><td>-</td><td></td></tr>
+<tr><th>12</th><td>-</td><td></td></tr>
+<tr><th>13</th><td>-</td><td></td></tr>
+<tr><th>14</th><td>CAN Low (J-2284)</td><td>CAN low (ISO 15765-4 AND J2234)</td></tr>
+<tr><th>15</th><td>ISO 9141-2 L Line</td><td>L line of ISO 9141-2 and ISO 14230-4</td></tr>
+<tr><th>16</th><td>Battery Power</td><td></td></tr>
+</table><br>
+<div class=ls>The location of the OBD II socket is generally on the driver's side of the car under the steering wheel.
+<br><br>The unspecified pins are left for car manufactures use. They can differ depending on the car manufacture and model.</div>
+
+<br><hr><h3>OBD-II to DE9 Cable</h3><img src="varie/obdii_db9.png">
+<table><tr><th>DE-9</th><th>OBD-II</th><th>Signal</th></tr>
+<tr><td>1</td><td>5</td><td>Signal Ground</td></tr>
+<tr><td>2</td><td>4</td><td>Chassis Ground</td></tr>
+<tr><td>3</td><td>6</td><td>CAN High (J-2284)</td></tr>
+<tr><td>4</td><td>7</td><td>ISO 9141-2 K Line</td></tr>
+<tr><td>5</td><td>14</td><td>CAN Low (J-2284)</td></tr>
+<tr><td>6</td><td>10</td><td>J1850 Bus-</td></tr>
+<tr><td>7</td><td>2</td><td>J1850 Bus+</td></tr>
+<tr><td>8</td><td>15</td><td>ISO 9141-2 L Line</td></tr>
+<tr><td>9</td><td>16</td><td>Battery Power</td></tr></table>
+<div class=ls>Note: This cable is not meant to be plugged directly into a computer's serial port. It is meant to plug into some sort of hardware interface.</div>
+
+<br><hr><h3>OBD-II to DE15 Cable</h3>
+<table><tr><th>DE-15S</th><th>OBD-II</th><th>Signal</th></tr>
+<tr><td>1</td><td>1</td><td></td></tr>
+<tr><td>2</td><td>2</td><td>J1850 Bus+</td></tr>
+<tr><td>3</td><td>3</td><td></td></tr>
+<tr><td>4</td><td>4</td><td>Chassis Ground</td></tr>
+<tr><td>5</td><td>5</td><td>Signal ground</td></tr>
+<tr><td>6</td><td>6</td><td></td></tr>
+<tr><td>7</td><td>7</td><td>ISO 9141-2 K Line</td></tr>
+<tr><td>8</td><td>8</td><td></td></tr>
+<tr><td>9</td><td>9</td><td></td></tr>
+<tr><td>10</td><td>10</td><td>J1850 Bus-</td></tr>
+<tr><td>11</td><td>11</td><td></td></tr>
+<tr><td>12</td><td>12</td><td></td></tr>
+<tr><td>13</td><td>16</td><td>Battery Power</td></tr>
+<tr><td>14</td><td>14</td><td></td></tr>
+<tr><td>15</td><td>15</td><td>ISO 9141-2 L Line</td></tr></table>
+<div class=ls>Outer shield is tied to pin 4</div>
+
+<br><hr><h3>OBD II Standard Fault Codes</h3>
+<div align=left><b>P00xx</b> Fuel and Air Metering<br>
+<b>P01xx</b> Fuel and Air Metering<br>
+<b>P02xx</b> Fuel and Air Metering<br>
+<b>P03xx</b> Ignition System and Misfire Detection<br>
+<b>P04xx</b> Auxilliary Emission Controls. EGR, EVAP etc.<br>
+<b>P05xx</b> Vehicle Speed, Idle Control, and Auxiliary Inputs<br>
+<b>P06xx</b> Computer and Auxiliary Outputs<br>
+<b>P07xx</b> Transmission</div>
+
+<br><br></body></html>

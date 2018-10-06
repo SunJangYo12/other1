@@ -1,0 +1,10 @@
+
+body{text-align:center;}
+body.left{text-align:left;}
+
+div.ls{text-align:left;font-size:80%;}
+
+table.tls {border-collapse:collapse; width:100%; font-size:80%;}
+table.tls td {white-space: nowrap;}
+
+td {vertical-align: middle;}

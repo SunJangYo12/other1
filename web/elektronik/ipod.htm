@@ -1,0 +1,59 @@
+﻿<!-- 
+Copyright © Iero Demetrio 2013 All Rights Reserved.
+No part of this page or any of its contents may be reproduced, copied, 
+modified or adapted, without the prior written consent of the author.
+ -->
+<html><head><link href="stile.css" rel="stylesheet"/></head><body>
+<img src="plug/ipod.png"><br><font style="font-size: 80%">30-pin Apple ipod/iphone connector</font></p>
+<table class=padleft><tr><th>Pin</th><th>Name</th><th>Description</th></tr>
+<tr><td>1</td><td rowspan=2>GND</td><td>Ground</td></tr>
+<tr><td>2</td><td>Audio & Video ground</td></tr>
+<tr><td>3</td><td>Right Out</td><td>Line Out Right Ch.</td></tr>
+<tr><td>4</td><td>Left Out</td><td>Line Out Left Ch.</td></tr>
+<tr><td>5</td><td>Right In</td><td>Line In Right Ch.</td></tr>
+<tr><td>6</td><td>Left In</td><td>Line In Left Ch.</td></tr>
+<tr><td>7</td><td>(Video Ground)</td><td></td></tr>
+<tr class=c><td rowspan=2>8</td><td>Composite Video Out</td><td>when slideshow active on iPod Photo</td></tr>
+<tr class=c><td>Component Video Pb</td><td><br></td></tr>
+<tr class=c><td rowspan=2>9</td><td>S-Video Chrominance Out</td><td>for iPod Color, Photo only</td></tr>
+<tr class=c><td>Component Video Y</td><td></td></tr>
+<tr class=c><td rowspan=2>10</td><td>S-Video Luminance Out</td><td>for iPod Color, Photo only</td></tr>
+<tr class=c><td>Component Video Pr</td><td></td></tr>
+<tr><td rowspan=2>11</td><td>AUDIO_SW</td><td>If connected to GND the iPhone sends audio signals through pin 3-4.</td></tr>
+<tr><td>GND</td><td>Serial Ground</td></tr>
+<tr><td>12</td><td>TX</td><td>Serial TXD (device sending)</td></tr>
+<tr><td>13</td><td>RX</td><td>Serial RXD (device receiving)</td></tr>
+<tr><td>14</td><td>n.c.</td><td>Reserved</td></tr>
+<tr><td>15</td><td rowspan=2>GND</td><td>Ground</td></tr>
+<tr><td>16</td><td>USB GND</td></tr>
+<tr><td>17</td><td>n.c.</td><td>Reserved</td></tr>
+<tr><td>18</td><td>3.3V</td><td>3.3V Power (*)</td></tr>
+<tr><td>19</td><td rowspan=2>+12V</td><td rowspan=2>Firewire Power +12 VDC</td></tr>
+<tr><td>20</td></tr>
+<tr><td rowspan=2>21</td><td>Accessory Indicator</td><td rowspan=2>Resistor to ground (**)</td></tr>
+<tr><td>Serial enable</td></tr>
+<tr class=c><td>22</td><td>TPA -</td><td>FireWire Data TPA -</td></tr>
+<tr><td>23</td><td>+5V</td><td>USB Power +5 VDC</td></tr>
+<tr class=c><td>24</td><td>TPA +</td><td>FireWire Data TPA +</td></tr>
+<tr><td>25</td><td>Data -</td><td>USB Data - (***)</td></tr>
+<tr class=c><td>26</td><td>TPB -</td><td>FireWire Data TPB -</td></tr>
+<tr><td>27</td><td>Data +</td><td>USB Data + (***)</td></tr>
+<tr class=c><td>28</td><td>TPB +</td><td>FireWire Data TPB +</td></tr>
+<tr><td>29</td><td rowspan=2>GND</td><td rowspan=2>FireWire Ground</td></tr>
+<tr><td>30</td></tr></table><br>
+<div class=ls>Signals with grey background may not exist on some docking stations.<br><br><br>
+<b>(*)</b> Stepped up to provide +5 VDC on iPod Camera Connector.<br><br>
+<b>(**)</b> Resistances indicate accessory type:<br><ul>
+<li>1kΩ: docking station, beeps when connected</li>
+<li>10kΩ: takes some iPods into photo import mode</li>
+<li>6.8kΩ: Serial port mode. TX-RX are 3.3V TTL level (requires MAX232 to convert to RS232).<br>Setting is 8N1 (8 bits, no parity, 1 stop bit), auto-baud range 9600 to 57.6K</li>
+<li>68kΩ: iPhone 3g / iPod Touch send audio through line-out without any messages<br>On the Nano 5G connecting the resistor will disable the audio redirection accomplished by connecting pin 11 to ground.</li>
+<li>500kΩ: used to enable serial communications. Used in Dension Ice Link Plus car interface</li>
+<li>1MΩ: Belkin auto adaptor, iPod shuts down automatically when power is disconnected.</li>
+</ul><br><br>
+<b>(***)</b> Pins 25 and 27 may be used in different manner:<br><ul>
+<li>To charge an iPhone 3G, 3GS, 4 / iPod Touch 2nd gen, 3rd, 4th or Ipod Classic (6th Gen), usb data- (25) should be at 2.8v, usb data+ (27) should be at 2.0v.</li>
+<li>It's also possible to charge iPod and iPhone connecting the +3.3v output (18) to USB Data + (27) through a 47kΩ resistor, and the USB Data- (25) through a 47kΩ resistor to the USB Power source +5v (23). This way the USB function is still useable for normal.</li>
+<li>To force the iPod 5G to charge in any case, when USB Power 5 VDC (pin 23) is fed, 25 must be connected to 5V through a 10kΩ resistor, and 27 must be connected to the Ground with a 10kΩ resistor.</li>
+<li>To charge iPod Nano pins 25 and 27 should be tied together and then connected to 5V power through to a 10K ohm resistor.</li>
+</ul></div><br><br></body></html>
